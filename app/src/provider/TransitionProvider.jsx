@@ -13,6 +13,7 @@ export default function TransitionProvider({ children }) {
     if (!svgRef.current) return;
 
     pathsRef.current = Array.from(svgRef.current.querySelectorAll("path"));
+
     pathLengthsRef.current = pathsRef.current.map((path) => {
       const length = path.getTotalLength();
       gsap.set(path, {
