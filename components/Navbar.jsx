@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/artworks", label: "Artworks" },
+  { href: "/explore", label: "Explore" },
 ];
 
-const NavBar = () => {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <div className="navbar-item">
-          <Link href="/">Codegrid</Link>
+          <Link href="/">Digital Art Gallery</Link>
         </div>
       </div>
       <div className="navbar-items">
@@ -23,6 +23,4 @@ const NavBar = () => {
       </div>
     </nav>
   );
-};
-
-export default NavBar;
+}

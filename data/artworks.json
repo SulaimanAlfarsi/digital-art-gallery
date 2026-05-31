@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Mona Lisa",
+    "artist": "Leonardo da Vinci",
+    "year": "1503",
+    "category": "Renaissance",
+    "country": "Italy",
+    "museum": "Louvre Museum, Paris",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg",
+    "description": "One of the most famous portraits in the world, known for its mysterious smile."
+  },
+  {
+    "id": 2,
+    "title": "The Starry Night",
+    "artist": "Vincent van Gogh",
+    "year": "1889",
+    "category": "Post-Impressionism",
+    "country": "Netherlands",
+    "museum": "Museum of Modern Art, New York",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg",
+    "description": "A powerful painting showing a swirling night sky over a quiet village."
+  },
+  {
+    "id": 3,
+    "title": "Girl with a Pearl Earring",
+    "artist": "Johannes Vermeer",
+    "year": "1665",
+    "category": "Baroque",
+    "country": "Netherlands",
+    "museum": "Mauritshuis, The Hague",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl%20with%20a%20Pearl%20Earring.jpg",
+    "description": "A beautiful portrait sometimes called the Mona Lisa of the North."
+  },
+  {
+    "id": 4,
+    "title": "The Great Wave off Kanagawa",
+    "artist": "Katsushika Hokusai",
+    "year": "1831",
+    "category": "Ukiyo-e",
+    "country": "Japan",
+    "museum": "Multiple collections",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg",
+    "description": "A famous Japanese woodblock print showing a huge wave near Mount Fuji."
+  },
+  {
+    "id": 5,
+    "title": "The Birth of Venus",
+    "artist": "Sandro Botticelli",
+    "year": "1485",
+    "category": "Renaissance",
+    "country": "Italy",
+    "museum": "Uffizi Gallery, Florence",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg",
+    "description": "A graceful Renaissance painting showing Venus arriving from the sea on a shell."
+  },
+  {
+    "id": 6,
+    "title": "The Arnolfini Portrait",
+    "artist": "Jan van Eyck",
+    "year": "1434",
+    "category": "Northern Renaissance",
+    "country": "Belgium",
+    "museum": "National Gallery, London",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Eyck%20-%20Arnolfini%20Portrait.jpg",
+    "description": "A detailed domestic portrait filled with symbols, reflections, and fine oil painting technique."
+  },
+  {
+    "id": 7,
+    "title": "Las Meninas",
+    "artist": "Diego Velazquez",
+    "year": "1656",
+    "category": "Baroque",
+    "country": "Spain",
+    "museum": "Museo del Prado, Madrid",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg",
+    "description": "A complex royal court painting that plays with perspective, reflection, and the role of the viewer."
+  },
+  {
+    "id": 8,
+    "title": "Liberty Leading the People",
+    "artist": "Eugene Delacroix",
+    "year": "1830",
+    "category": "Romanticism",
+    "country": "France",
+    "museum": "Louvre Museum, Paris",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Delacroix%20-%20La%20libert%C3%A9%20guidant%20le%20peuple.jpg",
+    "description": "A dramatic Romantic painting symbolizing freedom, revolution, and national struggle."
+  },
+  {
+    "id": 9,
+    "title": "The Creation of Adam",
+    "artist": "Michelangelo",
+    "year": "1512",
+    "category": "Renaissance",
+    "country": "Italy",
+    "museum": "Sistine Chapel, Vatican City",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20-%20Creation%20of%20Adam%20%28cropped%29.jpg",
+    "description": "A famous fresco scene from the Sistine Chapel showing the near-touching hands of God and Adam."
+  },
+  {
+    "id": 10,
+    "title": "The Last Supper",
+    "artist": "Leonardo da Vinci",
+    "year": "1498",
+    "category": "Renaissance",
+    "country": "Italy",
+    "museum": "Santa Maria delle Grazie, Milan",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20The%20Last%20Supper%20high%20res.jpg",
+    "description": "A monumental mural showing the emotional moment when Jesus announces that one disciple will betray him."
+  },
+  {
+    "id": 11,
+    "title": "The School of Athens",
+    "artist": "Raphael",
+    "year": "1511",
+    "category": "Renaissance",
+    "country": "Italy",
+    "museum": "Vatican Museums, Vatican City",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20scuola%20di%20Atene.jpg",
+    "description": "A masterpiece of Renaissance balance showing great philosophers in an ideal classical space."
+  },
+  {
+    "id": 12,
+    "title": "Impression, Sunrise",
+    "artist": "Claude Monet",
+    "year": "1872",
+    "category": "Impressionism",
+    "country": "France",
+    "museum": "Musee Marmottan Monet, Paris",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Impression%2C%20soleil%20levant.jpg",
+    "description": "The painting that gave Impressionism its name, showing light, atmosphere, and a loose brush style."
+  }
+]

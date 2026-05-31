@@ -1,28 +1,18 @@
 "use client";
 
-import type { ReactNode } from "react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { TransitionRouter } from "next-transition-router";
 
-type TransitionProviderProps = {
-  children: ReactNode;
-};
-
-export default function TransitionProvider({
-  children,
-}: TransitionProviderProps) {
-  const svgRef = useRef<SVGSVGElement | null>(null);
-  const pathsRef = useRef<SVGPathElement[]>([]);
-  const pathLengthsRef = useRef<number[]>([]);
+export default function TransitionProvider({ children }) {
+  const svgRef = useRef(null);
+  const pathsRef = useRef([]);
+  const pathLengthsRef = useRef([]);
 
   useEffect(() => {
     if (!svgRef.current) return;
 
-    pathsRef.current = Array.from(
-      svgRef.current.querySelectorAll<SVGPathElement>("path"),
-    );
-
+    pathsRef.current = Array.from(svgRef.current.querySelectorAll("path"));
     pathLengthsRef.current = pathsRef.current.map((path) => {
       const length = path.getTotalLength();
       gsap.set(path, {
