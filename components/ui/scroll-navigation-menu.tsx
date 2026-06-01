@@ -65,7 +65,7 @@ export const ScrollNavbar = ({
 
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
               <Link href="/" className="dag-navbar-brand">
-                {brand}
+                <span className="dag-navbar-logo" aria-hidden="true" />
               </Link>
             </motion.div>
 

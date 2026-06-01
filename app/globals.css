@@ -211,7 +211,9 @@ a {
 }
 
 .dag-navbar-brand {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   max-width: 11rem;
   overflow: hidden;
   color: var(--fg);
@@ -219,6 +221,17 @@ a {
   font-weight: 800;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.dag-navbar-logo {
+  display: block;
+  width: 3.2rem;
+  height: 2.15rem;
+  flex: 0 0 auto;
+  background-image: url("/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .dag-navbar-links {
