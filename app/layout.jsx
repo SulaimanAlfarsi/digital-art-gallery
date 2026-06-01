@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import { ScrollNavbar } from "@/components/ui/scroll-navigation-menu";
 import TransitionProvider from "@/app/src/provider/TransitionProvider";
 import "./globals.css";
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <TransitionProvider>
-          <Navbar />
+          <ScrollNavbar brand="Digital Art Gallery" />
           {children}
         </TransitionProvider>
       </body>

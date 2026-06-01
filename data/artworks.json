@@ -7,7 +7,7 @@
     "category": "Renaissance",
     "country": "Italy",
     "museum": "Louvre Museum, Paris",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg?width=800",
     "description": "One of the most famous portraits in the world, known for its mysterious smile."
   },
   {
@@ -18,7 +18,7 @@
     "category": "Post-Impressionism",
     "country": "Netherlands",
     "museum": "Museum of Modern Art, New York",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=800",
     "description": "A powerful painting showing a swirling night sky over a quiet village."
   },
   {
@@ -29,7 +29,7 @@
     "category": "Baroque",
     "country": "Netherlands",
     "museum": "Mauritshuis, The Hague",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl%20with%20a%20Pearl%20Earring.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl%20with%20a%20Pearl%20Earring.jpg?width=800",
     "description": "A beautiful portrait sometimes called the Mona Lisa of the North."
   },
   {
@@ -40,7 +40,7 @@
     "category": "Ukiyo-e",
     "country": "Japan",
     "museum": "Multiple collections",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg?width=800",
     "description": "A famous Japanese woodblock print showing a huge wave near Mount Fuji."
   },
   {
@@ -51,7 +51,7 @@
     "category": "Renaissance",
     "country": "Italy",
     "museum": "Uffizi Gallery, Florence",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg?width=800",
     "description": "A graceful Renaissance painting showing Venus arriving from the sea on a shell."
   },
   {
@@ -62,7 +62,7 @@
     "category": "Northern Renaissance",
     "country": "Belgium",
     "museum": "National Gallery, London",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Eyck%20-%20Arnolfini%20Portrait.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Eyck%20-%20Arnolfini%20Portrait.jpg?width=800",
     "description": "A detailed domestic portrait filled with symbols, reflections, and fine oil painting technique."
   },
   {
@@ -73,7 +73,7 @@
     "category": "Baroque",
     "country": "Spain",
     "museum": "Museo del Prado, Madrid",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg?width=800",
     "description": "A complex royal court painting that plays with perspective, reflection, and the role of the viewer."
   },
   {
@@ -84,7 +84,7 @@
     "category": "Romanticism",
     "country": "France",
     "museum": "Louvre Museum, Paris",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Delacroix%20-%20La%20libert%C3%A9%20guidant%20le%20peuple.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Delacroix%20-%20La%20libert%C3%A9%20guidant%20le%20peuple.jpg?width=800",
     "description": "A dramatic Romantic painting symbolizing freedom, revolution, and national struggle."
   },
   {
@@ -95,7 +95,7 @@
     "category": "Renaissance",
     "country": "Italy",
     "museum": "Sistine Chapel, Vatican City",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20-%20Creation%20of%20Adam%20%28cropped%29.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20-%20Creation%20of%20Adam%20%28cropped%29.jpg?width=800",
     "description": "A famous fresco scene from the Sistine Chapel showing the near-touching hands of God and Adam."
   },
   {
@@ -106,7 +106,7 @@
     "category": "Renaissance",
     "country": "Italy",
     "museum": "Santa Maria delle Grazie, Milan",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20The%20Last%20Supper%20high%20res.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20The%20Last%20Supper%20high%20res.jpg?width=800",
     "description": "A monumental mural showing the emotional moment when Jesus announces that one disciple will betray him."
   },
   {
@@ -117,7 +117,7 @@
     "category": "Renaissance",
     "country": "Italy",
     "museum": "Vatican Museums, Vatican City",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20scuola%20di%20Atene.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20scuola%20di%20Atene.jpg?width=800",
     "description": "A masterpiece of Renaissance balance showing great philosophers in an ideal classical space."
   },
   {
@@ -128,7 +128,7 @@
     "category": "Impressionism",
     "country": "France",
     "museum": "Musee Marmottan Monet, Paris",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Impression%2C%20soleil%20levant.jpg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Impression%2C%20soleil%20levant.jpg?width=800",
     "description": "The painting that gave Impressionism its name, showing light, atmosphere, and a loose brush style."
   }
 ]
