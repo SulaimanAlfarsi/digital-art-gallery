@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+
 export default function ArtworkCard({ artwork }) {
   return (
-    <article className="artwork-card">
+    <article className="artwork-card" tabIndex={0}>
       <div className="artwork-card-media">
         <img
           src={artwork.image}
@@ -31,15 +33,18 @@ export default function ArtworkCard({ artwork }) {
             />
           </svg>
         </div>
-      </div>
-      <div className="artwork-card-body">
-        <p>{artwork.category}</p>
-        <h2>{artwork.title}</h2>
-        <span>{artwork.artist} - {artwork.year}</span>
-        <span>
-          {artwork.country} / {artwork.museum}
-        </span>
-        <small>{artwork.description}</small>
+        <ProgressiveBlur
+          aria-hidden="true"
+          className="artwork-card-progressive-blur"
+          direction="bottom"
+          blurLayers={10}
+          blurIntensity={0.75}
+        />
+        <div className="artwork-card-overlay">
+          <p>{artwork.category}</p>
+          <h2>{artwork.title}</h2>
+          <span>{artwork.artist} - {artwork.year}</span>
+        </div>
       </div>
     </article>
   );
