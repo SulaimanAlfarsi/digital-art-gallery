@@ -4,44 +4,54 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --bg: #050505;
-  --fg: #f5f5f5;
+  --bg-main: #0e0b08;
+  --bg-card: #1a1410;
+  --text-main: #f7efe2;
+  --text-muted: #b8afa3;
+  --gold: #c9a227;
+  --gold-light: #e6c766;
+  --terracotta: #a85732;
+  --deep-red: #6e1f1f;
+  --emerald: #1f6f5b;
+  --indigo: #25316d;
+  --border: rgba(255, 255, 255, 0.08);
+  --bg: var(--bg-main);
+  --fg: var(--text-main);
   --font-barlow-condensed: Impact, "Arial Narrow", sans-serif;
   --font-dm-sans: Arial, Helvetica, sans-serif;
   --transition-stroke-1: var(--fg);
-  --transition-stroke-2: #ff4f7b;
-  --background: oklch(0.055 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.08 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.08 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.08 0 0);
-  --secondary: oklch(0.16 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.18 0 0);
-  --muted-foreground: oklch(0.72 0 0);
-  --accent: oklch(0.18 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --transition-stroke-2: var(--gold);
+  --background: var(--bg-main);
+  --foreground: var(--text-main);
+  --card: var(--bg-card);
+  --card-foreground: var(--text-main);
+  --popover: var(--bg-card);
+  --popover-foreground: var(--text-main);
+  --primary: var(--gold);
+  --primary-foreground: var(--bg-main);
+  --secondary: var(--bg-card);
+  --secondary-foreground: var(--text-main);
+  --muted: var(--bg-card);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--terracotta);
+  --accent-foreground: var(--text-main);
+  --destructive: var(--deep-red);
+  --input: rgba(255, 255, 255, 0.14);
+  --ring: var(--gold-light);
+  --chart-1: var(--gold);
+  --chart-2: var(--terracotta);
+  --chart-3: var(--emerald);
+  --chart-4: var(--indigo);
+  --chart-5: var(--deep-red);
   --radius: 0.625rem;
-  --sidebar: oklch(0.08 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.985 0 0);
-  --sidebar-primary-foreground: oklch(0.08 0 0);
-  --sidebar-accent: oklch(0.18 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.72 0 0);
+  --sidebar: var(--bg-card);
+  --sidebar-foreground: var(--text-main);
+  --sidebar-primary: var(--gold);
+  --sidebar-primary-foreground: var(--bg-main);
+  --sidebar-accent: var(--terracotta);
+  --sidebar-accent-foreground: var(--text-main);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--gold-light);
 }
 
 @theme inline {
@@ -145,8 +155,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #050505;
-    --fg: #f5f5f5;
+    --bg: var(--bg-main);
+    --fg: var(--text-main);
   }
 }
 
@@ -182,8 +192,8 @@ a {
   right: 0;
   left: 0;
   z-index: 50;
-  border-bottom: 1px solid rgb(255 255 255 / 10%);
-  background: rgb(5 5 5 / 95%);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-main), transparent 5%);
   backdrop-filter: blur(14px);
 }
 
@@ -223,13 +233,13 @@ a {
   gap: 0.4rem;
   border-radius: 7px;
   padding: 0.45rem 0.5rem;
-  color: rgb(245 245 245 / 88%);
+  color: var(--text-muted);
   font-size: 0.9rem;
   font-weight: 700;
 }
 
 .dag-navbar-link:hover {
-  color: var(--fg);
+  color: var(--gold-light);
 }
 
 .dag-navbar-icon {
@@ -241,7 +251,7 @@ a {
   position: absolute;
   inset: -0.25rem;
   border-radius: 10px;
-  background: rgb(255 255 255 / 8%);
+  background: color-mix(in srgb, var(--gold), transparent 90%);
 }
 
 .dag-navbar-mobile {
@@ -253,9 +263,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(255 255 255 / 14%);
+  border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgb(5 5 5 / 88%);
+  background: color-mix(in srgb, var(--bg-card), transparent 8%);
   color: var(--fg);
   box-shadow: 0 16px 38px rgb(0 0 0 / 30%);
   backdrop-filter: blur(14px);
@@ -279,7 +289,7 @@ a {
 .dag-floating-menu-button:hover,
 .dag-menu-close-button:hover,
 .dag-menu-link:hover {
-  background: rgb(255 255 255 / 10%);
+  background: color-mix(in srgb, var(--gold), transparent 90%);
 }
 
 .dag-navbar-menu-icon,
@@ -302,9 +312,9 @@ a {
   position: relative;
   width: min(88vw, 18rem);
   overflow: visible;
-  border: 1px solid rgb(255 255 255 / 10%);
+  border: 1px solid var(--border);
   border-radius: 24px;
-  background: #050505;
+  background: var(--bg-card);
   box-shadow: 0 28px 80px rgb(0 0 0 / 55%);
   pointer-events: auto;
 }
@@ -319,13 +329,13 @@ a {
 .dag-menu-dot-top {
   top: -0.5rem;
   left: -0.5rem;
-  background: rgb(255 255 255 / 55%);
+  background: var(--gold-light);
 }
 
 .dag-menu-dot-bottom {
   right: -0.5rem;
   bottom: -0.5rem;
-  background: rgb(255 255 255 / 12%);
+  background: color-mix(in srgb, var(--terracotta), transparent 35%);
 }
 
 .dag-menu-close-row {
@@ -343,7 +353,7 @@ a {
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: rgb(245 245 245 / 90%);
+  color: var(--text-muted);
 }
 
 .dag-menu-close-icon {
@@ -369,7 +379,7 @@ a {
 
 .dag-menu-link-icon-wrap {
   flex: 0 0 auto;
-  color: rgb(245 245 245 / 90%);
+  color: var(--gold-light);
 }
 
 .dag-menu-link-icon {
@@ -409,11 +419,11 @@ a {
 .dag-hero-tagline {
   display: inline-block;
   margin-bottom: 1rem;
-  border: 1px solid rgb(255 255 255 / 12%);
+  border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgb(20 20 20 / 72%);
+  background: color-mix(in srgb, var(--bg-card), transparent 12%);
   padding: 0.35rem 0.75rem;
-  color: rgb(245 245 245 / 70%);
+  color: var(--text-muted);
   font-size: 0.8rem;
   font-weight: 600;
   backdrop-filter: blur(12px);
@@ -432,7 +442,7 @@ a {
 .dag-hero-description {
   max-width: 36rem;
   margin-top: 1.25rem;
-  color: rgb(245 245 245 / 66%);
+  color: var(--text-muted);
   font-size: 1rem;
   line-height: 1.65;
 }
@@ -445,10 +455,10 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-  border: 1px solid rgb(255 255 255 / 25%);
+  border: 1px solid color-mix(in srgb, var(--gold), transparent 30%);
   border-radius: 999px;
-  background: #151515;
-  color: #fff;
+  background: var(--gold);
+  color: var(--bg-main);
   padding: 0.75rem 1.5rem;
   box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
   font-size: 0.9rem;
@@ -458,8 +468,8 @@ a {
 }
 
 .dag-hero-cta:hover {
-  border-color: rgb(255 255 255 / 40%);
-  background: #202020;
+  border-color: var(--gold-light);
+  background: var(--gold-light);
 }
 
 .dag-hero-marquee {
@@ -691,9 +701,9 @@ a {
   position: absolute;
   inset: -20%;
   background:
-    radial-gradient(circle at 20% 30%, #ff4f7b, transparent 28%),
-    radial-gradient(circle at 78% 35%, #2f6f7f, transparent 30%),
-    radial-gradient(circle at 50% 72%, #ef7a34, transparent 34%);
+    radial-gradient(circle at 20% 30%, var(--gold), transparent 28%),
+    radial-gradient(circle at 78% 35%, var(--emerald), transparent 30%),
+    radial-gradient(circle at 50% 72%, var(--terracotta), transparent 34%);
   filter: blur(22px);
   opacity: 0.5;
   animation: hue-drift 12s linear infinite;
@@ -827,7 +837,7 @@ a {
 .hero-copy {
   max-width: 40rem;
   margin: 1.5rem auto 0;
-  color: color-mix(in srgb, var(--fg), transparent 24%);
+  color: var(--text-muted);
   font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.6;
 }
@@ -841,11 +851,11 @@ a {
 }
 
 .hero-actions a {
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 75%);
+  border: 1px solid color-mix(in srgb, var(--gold), transparent 30%);
   border-radius: 999px;
-  background: #151515;
+  background: var(--gold);
   padding: 0.85rem 1.1rem;
-  color: #fff;
+  color: var(--bg-main);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -853,9 +863,9 @@ a {
 }
 
 .hero-actions a:hover {
-  border-color: color-mix(in srgb, var(--fg), transparent 60%);
-  background: #202020;
-  color: #fff;
+  border-color: var(--gold-light);
+  background: var(--gold-light);
+  color: var(--bg-main);
 }
 
 .image-carousel-hero {
@@ -871,9 +881,9 @@ a {
   position: absolute;
   inset: -20%;
   background:
-    radial-gradient(circle at 20% 20%, #ff4f7b33, transparent 28%),
-    radial-gradient(circle at 80% 18%, #2f6f7f33, transparent 30%),
-    radial-gradient(circle at 52% 80%, #ef7a3430, transparent 34%);
+    radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--gold), transparent 72%), transparent 28%),
+    radial-gradient(circle at 80% 18%, color-mix(in srgb, var(--emerald), transparent 70%), transparent 30%),
+    radial-gradient(circle at 52% 80%, color-mix(in srgb, var(--terracotta), transparent 72%), transparent 34%);
   filter: blur(18px);
 }
 
@@ -922,9 +932,9 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 84%);
+  border: 1px solid var(--border);
   border-radius: 14px;
-  background: white;
+  background: var(--bg-card);
   box-shadow: 0 24px 70px color-mix(in srgb, var(--fg), transparent 82%);
   transform-style: preserve-3d;
   transform: rotate(calc(var(--card-r) * -0.35));
@@ -952,7 +962,7 @@ a {
 .image-carousel-hero__content > p:not(.eyebrow) {
   max-width: 36rem;
   margin: 1.25rem auto 0;
-  color: color-mix(in srgb, var(--fg), transparent 28%);
+  color: var(--text-muted);
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
 }
@@ -962,10 +972,10 @@ a {
   align-items: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 75%);
+  border: 1px solid color-mix(in srgb, var(--gold), transparent 30%);
   border-radius: 999px;
-  background: #151515;
-  color: #fff;
+  background: var(--gold);
+  color: var(--bg-main);
   padding: 0.85rem 1.2rem;
   font: inherit;
   font-weight: 800;
@@ -996,9 +1006,9 @@ a {
 }
 
 .image-carousel-hero__feature {
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 82%);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: color-mix(in srgb, var(--bg), white 45%);
+  background: var(--bg-card);
   padding: 1rem;
 }
 
@@ -1008,7 +1018,7 @@ a {
 
 .image-carousel-hero__feature p {
   margin-top: 0.5rem;
-  color: color-mix(in srgb, var(--fg), transparent 32%);
+  color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.45;
 }
@@ -1041,7 +1051,7 @@ a {
 
 .section-header > p {
   max-width: 32rem;
-  color: color-mix(in srgb, var(--fg), transparent 28%);
+  color: var(--text-muted);
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -1064,37 +1074,37 @@ a {
 }
 
 .artwork-card {
-  --card-stroke-1: #f0f2ef;
-  --card-stroke-2: #b66a6c;
+  --card-stroke-1: var(--text-main);
+  --card-stroke-2: var(--terracotta);
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 88%);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: color-mix(in srgb, var(--bg), white 11%);
-  box-shadow: 0 18px 42px color-mix(in srgb, var(--fg), transparent 90%);
+  background: var(--bg-card);
+  box-shadow: 0 18px 42px rgb(0 0 0 / 28%);
 }
 
 .artwork-card:nth-child(3n + 1) {
-  --card-stroke-2: #ef7a34;
+  --card-stroke-2: var(--terracotta);
 }
 
 .artwork-card:nth-child(3n + 2) {
-  --card-stroke-2: #b66a6c;
+  --card-stroke-2: var(--deep-red);
 }
 
 .artwork-card:nth-child(3n) {
-  --card-stroke-2: #2f6f7f;
+  --card-stroke-2: var(--emerald);
 }
 
 .category-card {
-  border: 1px solid color-mix(in srgb, var(--fg), transparent 76%);
-  background: color-mix(in srgb, var(--bg), white 11%);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
 }
 
 .artwork-card-media {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: color-mix(in srgb, var(--fg), transparent 90%);
+  background: color-mix(in srgb, var(--bg-card), black 20%);
 }
 
 .artwork-card-media img {
@@ -1168,14 +1178,14 @@ a {
 .category-card span {
   display: block;
   margin-top: 0.65rem;
-  color: color-mix(in srgb, var(--fg), transparent 38%);
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
 .artwork-card-body small {
   display: block;
   margin-top: 0.75rem;
-  color: color-mix(in srgb, var(--fg), transparent 28%);
+  color: var(--text-muted);
   font-size: 0.875rem;
   line-height: 1.45;
 }
