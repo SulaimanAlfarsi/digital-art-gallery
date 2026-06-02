@@ -43,17 +43,7 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg?width=800",
     "description": "A famous Japanese woodblock print showing a huge wave near Mount Fuji."
   },
-  {
-    "id": 5,
-    "title": "The Birth of Venus",
-    "artist": "Sandro Botticelli",
-    "year": "1485",
-    "category": "Renaissance",
-    "country": "Italy",
-    "museum": "Uffizi Gallery, Florence",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg?width=800",
-    "description": "A graceful Renaissance painting showing Venus arriving from the sea on a shell."
-  },
+
   {
     "id": 6,
     "title": "The Arnolfini Portrait",
@@ -75,28 +65,6 @@
     "museum": "Museo del Prado, Madrid",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg?width=800",
     "description": "A complex royal court painting that plays with perspective, reflection, and the role of the viewer."
-  },
-  {
-    "id": 8,
-    "title": "Liberty Leading the People",
-    "artist": "Eugene Delacroix",
-    "year": "1830",
-    "category": "Romanticism",
-    "country": "France",
-    "museum": "Louvre Museum, Paris",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Delacroix%20-%20La%20libert%C3%A9%20guidant%20le%20peuple.jpg?width=800",
-    "description": "A dramatic Romantic painting symbolizing freedom, revolution, and national struggle."
-  },
-  {
-    "id": 9,
-    "title": "The Creation of Adam",
-    "artist": "Michelangelo",
-    "year": "1512",
-    "category": "Renaissance",
-    "country": "Italy",
-    "museum": "Sistine Chapel, Vatican City",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20-%20Creation%20of%20Adam%20%28cropped%29.jpg?width=800",
-    "description": "A famous fresco scene from the Sistine Chapel showing the near-touching hands of God and Adam."
   },
   {
     "id": 10,
