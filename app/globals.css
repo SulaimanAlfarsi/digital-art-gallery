@@ -4,17 +4,17 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --bg-main: #0e0b08;
-  --bg-card: #1a1410;
-  --text-main: #f7efe2;
-  --text-muted: #b8afa3;
-  --gold: #c9a227;
-  --gold-light: #e6c766;
-  --terracotta: #a85732;
-  --deep-red: #6e1f1f;
-  --emerald: #1f6f5b;
-  --indigo: #25316d;
-  --border: rgba(255, 255, 255, 0.08);
+  --bg-main: #f6f8fb;
+  --bg-card: #ffffff;
+  --text-main: #17212b;
+  --text-muted: #657386;
+  --gold: #b67816;
+  --gold-light: #8f5c10;
+  --terracotta: #c25f3d;
+  --deep-red: #a83246;
+  --emerald: #16745f;
+  --indigo: #4056a1;
+  --border: rgba(23, 33, 43, 0.12);
   --bg: var(--bg-main);
   --fg: var(--text-main);
   --font-barlow-condensed: Impact, "Arial Narrow", sans-serif;
@@ -28,7 +28,7 @@
   --popover: var(--bg-card);
   --popover-foreground: var(--text-main);
   --primary: var(--gold);
-  --primary-foreground: var(--bg-main);
+  --primary-foreground: #ffffff;
   --secondary: var(--bg-card);
   --secondary-foreground: var(--text-main);
   --muted: var(--bg-card);
@@ -36,7 +36,7 @@
   --accent: var(--terracotta);
   --accent-foreground: var(--text-main);
   --destructive: var(--deep-red);
-  --input: rgba(255, 255, 255, 0.14);
+  --input: rgba(23, 33, 43, 0.16);
   --ring: var(--gold-light);
   --chart-1: var(--gold);
   --chart-2: var(--terracotta);
@@ -47,7 +47,7 @@
   --sidebar: var(--bg-card);
   --sidebar-foreground: var(--text-main);
   --sidebar-primary: var(--gold);
-  --sidebar-primary-foreground: var(--bg-main);
+  --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: var(--terracotta);
   --sidebar-accent-foreground: var(--text-main);
   --sidebar-border: var(--border);
@@ -193,7 +193,7 @@ a {
   left: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--bg-main), transparent 5%);
+  background: color-mix(in srgb, var(--bg-card), transparent 8%);
   backdrop-filter: blur(14px);
 }
 
@@ -252,7 +252,7 @@ a {
 }
 
 .dag-navbar-link:hover {
-  color: var(--gold-light);
+  color: var(--gold);
 }
 
 .dag-navbar-icon {
@@ -280,7 +280,7 @@ a {
   border-radius: 999px;
   background: color-mix(in srgb, var(--bg-card), transparent 8%);
   color: var(--fg);
-  box-shadow: 0 16px 38px rgb(0 0 0 / 30%);
+  box-shadow: 0 14px 34px rgb(23 33 43 / 14%);
   backdrop-filter: blur(14px);
 }
 
@@ -335,7 +335,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: color-mix(in srgb, var(--bg-card), transparent 8%);
-  box-shadow: 0 16px 34px rgb(0 0 0 / 22%);
+  box-shadow: 0 16px 34px rgb(23 33 43 / 12%);
   transition:
     border-color 180ms ease,
     background-color 180ms ease,
@@ -400,7 +400,7 @@ a {
 .site-footer-links a:hover {
   border-color: var(--border);
   background: color-mix(in srgb, var(--gold), transparent 92%);
-  color: var(--gold-light);
+  color: var(--gold);
 }
 
 .dag-navbar-menu-icon,
@@ -426,7 +426,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 24px;
   background: var(--bg-card);
-  box-shadow: 0 28px 80px rgb(0 0 0 / 55%);
+  box-shadow: 0 28px 80px rgb(23 33 43 / 20%);
   pointer-events: auto;
 }
 
@@ -440,7 +440,7 @@ a {
 .dag-menu-dot-top {
   top: -0.5rem;
   left: -0.5rem;
-  background: var(--gold-light);
+  background: var(--gold);
 }
 
 .dag-menu-dot-bottom {
@@ -490,7 +490,7 @@ a {
 
 .dag-menu-link-icon-wrap {
   flex: 0 0 auto;
-  color: var(--gold-light);
+  color: var(--gold);
 }
 
 .dag-menu-link-icon {
@@ -569,9 +569,9 @@ a {
   border: 1px solid color-mix(in srgb, var(--gold), transparent 30%);
   border-radius: 999px;
   background: var(--gold);
-  color: var(--bg-main);
+  color: var(--primary-foreground);
   padding: 0.75rem 1.5rem;
-  box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
+  box-shadow: 0 14px 36px rgb(182 120 22 / 24%);
   font-size: 0.9rem;
   font-weight: 850;
   letter-spacing: 0;
@@ -611,7 +611,7 @@ a {
   height: 100%;
   border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 12px 32px rgb(0 0 0 / 36%);
+  box-shadow: 0 12px 32px rgb(23 33 43 / 16%);
 }
 
 @media (min-width: 640px) {
@@ -966,17 +966,17 @@ a {
   border-radius: 999px;
   background: var(--gold);
   padding: 0.85rem 1.1rem;
-  color: var(--bg-main);
+  color: var(--primary-foreground);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
-  box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
+  box-shadow: 0 14px 36px rgb(182 120 22 / 24%);
 }
 
 .hero-actions a:hover {
   border-color: var(--gold-light);
   background: var(--gold-light);
-  color: var(--bg-main);
+  color: var(--primary-foreground);
 }
 
 .image-carousel-hero {
@@ -1086,13 +1086,13 @@ a {
   border: 1px solid color-mix(in srgb, var(--gold), transparent 30%);
   border-radius: 999px;
   background: var(--gold);
-  color: var(--bg-main);
+  color: var(--primary-foreground);
   padding: 0.85rem 1.2rem;
   font: inherit;
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
+  box-shadow: 0 14px 36px rgb(182 120 22 / 24%);
 }
 
 .image-carousel-hero__features {
@@ -1192,7 +1192,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg-card);
-  box-shadow: 0 18px 42px rgb(0 0 0 / 28%);
+  box-shadow: 0 18px 42px rgb(23 33 43 / 10%);
   outline: none;
   transition:
     border-color 240ms ease,
@@ -1202,7 +1202,7 @@ a {
 .artwork-card:hover,
 .artwork-card:focus-visible {
   border-color: color-mix(in srgb, var(--card-stroke-2), white 18%);
-  box-shadow: 0 24px 60px rgb(0 0 0 / 36%);
+  box-shadow: 0 24px 60px rgb(23 33 43 / 16%);
 }
 
 .artwork-card:nth-child(3n + 1) {
