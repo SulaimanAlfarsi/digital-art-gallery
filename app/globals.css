@@ -305,6 +305,104 @@ a {
   background: color-mix(in srgb, var(--gold), transparent 90%);
 }
 
+.site-footer {
+  border-top: 1px solid var(--border);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg-main), transparent 100%),
+      color-mix(in srgb, var(--bg-card), transparent 10%)
+    );
+}
+
+.site-footer-inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  width: min(100%, 80rem);
+  min-height: 7rem;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.site-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--bg-card), transparent 8%);
+  box-shadow: 0 16px 34px rgb(0 0 0 / 22%);
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.site-footer-brand:hover {
+  border-color: color-mix(in srgb, var(--gold), white 14%);
+  background: color-mix(in srgb, var(--gold), transparent 90%);
+  transform: translateY(-0.12rem);
+}
+
+.site-footer-logo {
+  width: 3rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  background-image: url("/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.site-footer-copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.site-footer p {
+  max-width: 26rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.site-footer-copy span {
+  color: color-mix(in srgb, var(--text-muted), transparent 25%);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.site-footer-links a {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 0.5rem 0.65rem;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.site-footer-links a:hover {
+  border-color: var(--border);
+  background: color-mix(in srgb, var(--gold), transparent 92%);
+  color: var(--gold-light);
+}
+
 .dag-navbar-menu-icon,
 .dag-floating-menu-icon {
   width: 1.15rem;
@@ -1354,6 +1452,11 @@ a {
 
   .section-header > p {
     margin-top: 1rem;
+  }
+
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
   }
 
   .artwork-grid,
