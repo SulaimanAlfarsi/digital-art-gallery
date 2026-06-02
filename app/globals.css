@@ -1154,7 +1154,7 @@ a {
 .artwork-card-transition {
   position: absolute;
   inset: -28%;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
   opacity: 0;
   mix-blend-mode: normal;
@@ -1188,7 +1188,7 @@ a {
 .artwork-card-progressive-blur {
   position: absolute;
   inset: auto 0 0;
-  z-index: 2;
+  z-index: 1;
   height: 72%;
   pointer-events: none;
   opacity: 0;
@@ -1198,6 +1198,7 @@ a {
 .artwork-card-progressive-blur::after {
   position: absolute;
   inset: 0;
+  z-index: -1;
   content: "";
   border-radius: inherit;
   background:
@@ -1214,7 +1215,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   display: grid;
   gap: 0.45rem;
   padding: clamp(1rem, 2vw, 1.25rem);
