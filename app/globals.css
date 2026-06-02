@@ -1372,9 +1372,8 @@ a {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
-  transform: translateY(100%);
   width: 100vw;
   height: 100vh;
   height: 100dvh;
