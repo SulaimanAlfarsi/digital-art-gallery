@@ -1196,15 +1196,13 @@ a {
   outline: none;
   transition:
     border-color 240ms ease,
-    box-shadow 240ms ease,
-    transform 240ms ease;
+    box-shadow 240ms ease;
 }
 
 .artwork-card:hover,
 .artwork-card:focus-visible {
   border-color: color-mix(in srgb, var(--card-stroke-2), white 18%);
   box-shadow: 0 24px 60px rgb(0 0 0 / 36%);
-  transform: translateY(-0.2rem);
 }
 
 .artwork-card:nth-child(3n + 1) {
@@ -1287,25 +1285,14 @@ a {
   position: absolute;
   inset: auto 0 0;
   z-index: 1;
-  height: 72%;
+  height: 0;
   pointer-events: none;
   opacity: 0;
   transition: opacity 260ms ease;
 }
 
 .artwork-card-progressive-blur::after {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  content: "";
-  border-radius: inherit;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(0 0 0 / 0%) 0%,
-      rgb(0 0 0 / 44%) 44%,
-      rgb(0 0 0 / 82%) 100%
-    );
+  content: none;
 }
 
 .artwork-card-overlay {
@@ -1319,6 +1306,7 @@ a {
   padding: clamp(1rem, 2vw, 1.25rem);
   color: white;
   opacity: 0;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 70%);
   transform: translateY(0.75rem);
   transition:
     opacity 260ms ease,
