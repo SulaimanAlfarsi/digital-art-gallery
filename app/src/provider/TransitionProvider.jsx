@@ -5,12 +5,13 @@ import gsap from "gsap";
 import { TransitionRouter } from "next-transition-router";
 
 export default function TransitionProvider({ children }) {
+  const overlayRef = useRef(null);
   const svgRef = useRef(null);
   const pathsRef = useRef([]);
   const pathLengthsRef = useRef([]);
 
   useEffect(() => {
-    if (!svgRef.current) return;
+    if (!svgRef.current || !overlayRef.current) return;
 
     pathsRef.current = Array.from(svgRef.current.querySelectorAll("path"));
 
@@ -24,6 +25,8 @@ export default function TransitionProvider({ children }) {
 
       return length;
     });
+
+    gsap.set(overlayRef.current, { autoAlpha: 0 });
   }, []);
 
   return (
@@ -31,6 +34,8 @@ export default function TransitionProvider({ children }) {
       auto
       leave={(next) => {
         const tl = gsap.timeline({ onComplete: next });
+
+        tl.set(overlayRef.current, { autoAlpha: 1 });
 
         pathsRef.current.forEach((path) => {
           tl.to(
@@ -48,7 +53,12 @@ export default function TransitionProvider({ children }) {
         return () => tl.kill();
       }}
       enter={(next) => {
-        const tl = gsap.timeline({ onComplete: next });
+        const tl = gsap.timeline({
+          onComplete: () => {
+            gsap.set(overlayRef.current, { autoAlpha: 0 });
+            next();
+          },
+        });
 
         pathsRef.current.forEach((path, index) => {
           tl.to(
@@ -67,7 +77,12 @@ export default function TransitionProvider({ children }) {
       }}
     >
       {children}
-      <div aria-hidden="true" className="transition-svg">
+      <div
+        ref={overlayRef}
+        aria-hidden="true"
+        className="transition-svg"
+        style={{ opacity: 0, visibility: "hidden" }}
+      >
         <svg
           ref={svgRef}
           viewBox="0 0 2450 2535"
