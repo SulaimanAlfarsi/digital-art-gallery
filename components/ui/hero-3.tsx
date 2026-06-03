@@ -118,12 +118,6 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
       <div className="dag-hero-marquee">
         <motion.div
           className="dag-hero-marquee-track"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            ease: "linear",
-            duration: 40,
-            repeat: Infinity,
-          }}
         >
           {duplicatedImages.map((src, index) => (
             <div

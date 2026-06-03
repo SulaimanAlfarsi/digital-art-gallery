@@ -193,8 +193,8 @@ a {
   left: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--bg-card), transparent 8%);
-  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg), transparent 4%);
+  backdrop-filter: blur(10px);
 }
 
 .dag-navbar-inner {
@@ -589,13 +589,22 @@ a {
   left: 0;
   z-index: 0;
   width: 100%;
-  height: 9rem;
-  mask-image: linear-gradient(to bottom, transparent, black 18%, black 88%);
+  height: 9.75rem;
+  padding-top: 0.75rem;
+  mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
 }
 
 .dag-hero-marquee-track {
   display: flex;
   gap: 1rem;
+  width: max-content;
+  animation: dag-hero-marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.dag-hero-marquee:hover .dag-hero-marquee-track,
+.dag-hero-marquee:focus-within .dag-hero-marquee-track {
+  animation-play-state: paused;
 }
 
 .dag-hero-marquee-card {
@@ -603,6 +612,14 @@ a {
   flex: 0 0 auto;
   height: 8rem;
   aspect-ratio: 3 / 4;
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.dag-hero-marquee-card:hover {
+  filter: saturate(1.05) contrast(1.04);
+  transform: translateY(-0.35rem);
 }
 
 .dag-hero-marquee-image {
@@ -612,6 +629,16 @@ a {
   border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 12px 32px rgb(23 33 43 / 16%);
+}
+
+@keyframes dag-hero-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 640px) {
@@ -659,7 +686,8 @@ a {
   }
 
   .dag-hero-marquee {
-    height: 12rem;
+    height: 12.9rem;
+    padding-top: 0.9rem;
   }
 
   .dag-hero-marquee-card {
@@ -679,7 +707,8 @@ a {
   }
 
   .dag-hero-marquee {
-    height: 14rem;
+    height: 15rem;
+    padding-top: 1rem;
   }
 
   .dag-hero-marquee-card {
