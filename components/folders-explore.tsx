@@ -30,6 +30,7 @@ function GalleryFolderCard({ project, index }: { project: Project; index: number
       }}
       style={{
         perspective: "1200px",
+        zIndex: isHovered ? 50 : 1,
         transformStyle: "preserve-3d",
       }}
     >
@@ -72,11 +73,13 @@ function GalleryFolderCard({ project, index }: { project: Project; index: number
               const yOffset = -16 * (1 - distanceFromCenter / 2) || 0
               const scale = distanceFromCenter === 0 ? 1.05 : distanceFromCenter === 1 ? 0.95 : 0.88
               const zIndex = 10 - distanceFromCenter
+              const staggerDelay = distanceFromCenter * 0.08
 
               return (
                 <motion.div
                   key={`${project.id}-${imageIndex}`}
                   className="absolute left-1/2 top-0"
+                  initial={false}
                   animate={{
                     x: `calc(-50% + ${isHovered ? position.x * 1.4 : position.x}px)`,
                     y: (isHovered ? -8 : 8) + yOffset,
@@ -89,6 +92,12 @@ function GalleryFolderCard({ project, index }: { project: Project; index: number
                     stiffness: 100,
                     damping: 16,
                     mass: 1,
+                    delay: staggerDelay,
+                    opacity: {
+                      duration: 0.4,
+                      ease: "easeOut",
+                      delay: staggerDelay,
+                    },
                   }}
                   style={{ zIndex }}
                 >
