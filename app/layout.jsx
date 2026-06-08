@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <TransitionProvider>
-          <ScrollNavbar brand="Digital Art Gallery" />
+          <ScrollNavbar />
           {children}
           <footer className="site-footer">
             <div className="site-footer-inner">

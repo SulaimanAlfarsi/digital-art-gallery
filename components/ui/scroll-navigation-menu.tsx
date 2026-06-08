@@ -12,7 +12,6 @@ const defaultMenuItems = [
 ]
 
 export const ScrollNavbar = ({
-  brand     = "Logo",
   menuItems = defaultMenuItems,
   className = "",
 }) => {
