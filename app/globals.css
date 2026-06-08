@@ -598,7 +598,7 @@ a {
   display: flex;
   gap: 1rem;
   width: max-content;
-  animation: dag-hero-marquee-scroll 28s linear infinite;
+  animation: dag-hero-marquee-scroll 42s linear infinite;
   will-change: transform;
 }
 
