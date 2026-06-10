@@ -1648,10 +1648,11 @@ a {
 .gallery-footer {
   position: relative;
   width: 100%;
-  height: 420px;
+  min-height: 460px;
   overflow: hidden;
   border-top: 1px solid var(--border);
-  background: var(--bg-main);
+  background:
+    linear-gradient(180deg, #f9fbfd 0%, #eef2f6 100%);
   color: var(--text-main);
 }
 
@@ -1659,7 +1660,10 @@ a {
   position: absolute;
   inset: 0;
   z-index: 0;
+  opacity: 0.22;
   pointer-events: none;
+  transform: translateY(4%) scale(1.04);
+  transform-origin: center bottom;
 }
 
 .gallery-footer__canvas canvas {
@@ -1667,6 +1671,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 100%;
+  filter: grayscale(1) contrast(0.85);
 }
 
 .gallery-footer__overlay {
@@ -1674,12 +1679,9 @@ a {
   inset: 0;
   z-index: 10;
   pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    var(--bg-main) 0%,
-    color-mix(in srgb, var(--bg-main), transparent 15%) 45%,
-    color-mix(in srgb, var(--bg-main), transparent 80%) 100%
-  );
+  background:
+    linear-gradient(180deg, rgb(249 251 253 / 98%) 0%, rgb(249 251 253 / 92%) 38%, rgb(249 251 253 / 52%) 66%, rgb(249 251 253 / 12%) 100%),
+    linear-gradient(0deg, rgb(23 33 43 / 72%) 0%, rgb(23 33 43 / 0%) 32%);
 }
 
 .gallery-footer__content {
@@ -1688,40 +1690,44 @@ a {
   display: flex;
   flex-direction: column;
   width: min(100%, 64rem);
-  height: 100%;
+  min-height: 460px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 0;
+  padding: 3.25rem 1.25rem 1.25rem;
 }
 
 .gallery-footer__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 48rem;
+  margin: 0 auto;
   text-align: center;
 }
 
 .gallery-footer__title {
   color: var(--text-main);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(3rem, 6vw, 4.5rem);
   font-weight: 900;
-  line-height: 1;
+  line-height: 0.92;
+  text-wrap: balance;
   text-transform: uppercase;
 }
 
 .gallery-footer__subtitle {
-  margin-top: 0.75rem;
-  color: var(--gold);
-  font-size: 1.05rem;
-  font-weight: 700;
+  margin-top: 0.85rem;
+  color: var(--gold-light);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 850;
 }
 
 .gallery-footer__description {
-  max-width: 36rem;
-  margin-top: 1rem;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  max-width: 43rem;
+  margin-top: 1.1rem;
+  color: color-mix(in srgb, var(--text-main), transparent 12%);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 .gallery-footer__bar {
@@ -1731,8 +1737,12 @@ a {
   justify-content: space-between;
   gap: 1rem;
   margin-top: auto;
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--border);
+  border: 1px solid rgb(255 255 255 / 38%);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 76%);
+  padding: 0.9rem 1rem;
+  box-shadow: 0 20px 60px rgb(23 33 43 / 16%);
+  backdrop-filter: blur(18px);
 }
 
 .gallery-footer__nav {
@@ -1740,8 +1750,8 @@ a {
   align-items: center;
   gap: 1.5rem;
   color: var(--text-main);
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 850;
 }
 
 .gallery-footer__nav a:hover {
@@ -1749,13 +1759,20 @@ a {
 }
 
 .gallery-footer__copyright {
-  color: var(--text-muted);
-  font-size: 0.78rem;
+  color: color-mix(in srgb, var(--text-main), transparent 22%);
+  font-size: 0.84rem;
+  font-weight: 750;
 }
 
 @media (min-width: 640px) {
   .gallery-footer {
-    height: 450px;
+    min-height: 480px;
+  }
+
+  .gallery-footer__content {
+    min-height: 480px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   .gallery-footer__bar {

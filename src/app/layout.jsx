@@ -1,5 +1,5 @@
 import { ScrollNavbar } from "@/components/ui/scroll-navigation-menu";
-import TransitionProvider from "@/app/src/provider/TransitionProvider";
+import TransitionProvider from "@/providers/TransitionProvider";
 import ArtGalleryFooter from "@/components/ArtGalleryFooter";
 import "./globals.css";
 

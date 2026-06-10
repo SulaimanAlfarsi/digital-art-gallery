@@ -4,15 +4,12 @@ import { CrowdCanvas } from "@/components/v1/skiper39";
 const ArtGalleryFooter = () => {
   return (
     <footer className="gallery-footer">
-      {/* Animated crowd background — sits at the very bottom, behind the content */}
       <div className="gallery-footer__canvas">
-        <CrowdCanvas src="/images/peeps/all-peeps.png" rows={15} cols={7} />
+        <CrowdCanvas src="/images/peeps/all-peeps-2.png" rows={15} cols={7} />
       </div>
 
-      {/* Soft light gradient overlay so the content stays readable over the crowd */}
       <div className="gallery-footer__overlay" />
 
-      {/* Footer content */}
       <div className="gallery-footer__content">
         <div className="gallery-footer__intro">
           <h2 className="gallery-footer__title">Digital Art Gallery</h2>
