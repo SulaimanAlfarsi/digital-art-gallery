@@ -12,7 +12,7 @@ const ArtGalleryFooter = () => {
 
       <div className="gallery-footer__content">
         <div className="gallery-footer__intro">
-          <h2 className="gallery-footer__title">Digital Art Gallery</h2>
+          <h2 className="gallery-footer__title">Riwaq Art</h2>
           <p className="gallery-footer__subtitle">Explore Art Beyond Borders</p>
           <p className="gallery-footer__description">
             A living space where art, culture, and creativity meet. Wander
@@ -29,7 +29,7 @@ const ArtGalleryFooter = () => {
           </nav>
 
           <p className="gallery-footer__copyright">
-            © 2026 Digital Art Gallery.
+            © 2026 Riwaq Art.
           </p>
         </div>
       </div>

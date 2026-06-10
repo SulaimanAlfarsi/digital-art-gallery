@@ -4,7 +4,7 @@ import ArtGalleryFooter from "@/components/ArtGalleryFooter";
 import "./globals.css";
 
 export const metadata = {
-  title: "Digital Art Gallery",
+  title: "Riwaq Art",
   description: "A curated gallery of contemporary digital artworks.",
 };
 

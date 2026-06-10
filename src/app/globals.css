@@ -228,7 +228,7 @@ a {
   width: 3.2rem;
   height: 2.15rem;
   flex: 0 0 auto;
-  background-image: url("/logo.png");
+  background-image: url("/art-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -352,7 +352,7 @@ a {
   width: 3rem;
   height: 2rem;
   flex: 0 0 auto;
-  background-image: url("/logo.png");
+  background-image: url("/art-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -529,33 +529,41 @@ a {
 
 .dag-hero-tagline {
   display: inline-block;
-  margin-bottom: 1rem;
-  border: 1px solid var(--border);
+  margin-bottom: 1.15rem;
+  border: 1px solid color-mix(in srgb, var(--gold), transparent 45%);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--bg-card), transparent 12%);
-  padding: 0.35rem 0.75rem;
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  font-weight: 600;
+  background: color-mix(in srgb, var(--bg-card), transparent 4%);
+  padding: 0.45rem 0.9rem;
+  color: var(--gold-light);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 34px rgb(23 33 43 / 8%);
   backdrop-filter: blur(12px);
 }
 
 .dag-hero-title {
-  width: min(100%, 11ch);
+  width: min(100%, 10ch);
   color: var(--fg);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(2.75rem, 8vw, 5.9rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 900;
-  line-height: 0.9;
+  line-height: 0.82;
+  text-wrap: balance;
   text-transform: uppercase;
 }
 
 .dag-hero-description {
-  max-width: 36rem;
-  margin-top: 1.25rem;
-  color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.65;
+  max-width: min(100%, 34rem);
+  margin-top: 1rem;
+  color: var(--gold-light);
+  font-family: var(--font-barlow-condensed);
+  font-size: clamp(1.35rem, 3vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1;
+  text-wrap: balance;
+  text-transform: uppercase;
 }
 
 .dag-hero-cta {
@@ -679,10 +687,6 @@ a {
     min-height: 100svh;
     padding-top: 8rem;
     padding-bottom: 16rem;
-  }
-
-  .dag-hero-description {
-    font-size: 1.125rem;
   }
 
   .dag-hero-marquee {
@@ -1207,6 +1211,30 @@ a {
 .artwork-grid {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
   gap: 0.75rem;
+}
+
+.featured-works .artwork-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 1.5vw, 1.15rem);
+}
+
+.featured-works .artwork-card {
+  flex: 0 1 clamp(10.5rem, 16vw, 13rem);
+  width: clamp(10.5rem, 16vw, 13rem);
+}
+
+.featured-works .artwork-card-media {
+  aspect-ratio: 3 / 4;
+}
+
+@media (max-width: 390px) {
+  .featured-works .artwork-card {
+    flex-basis: min(100%, 13rem);
+    width: min(100%, 13rem);
+  }
 }
 
 .category-grid {
