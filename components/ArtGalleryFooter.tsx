@@ -32,7 +32,7 @@ const ArtGalleryFooter = () => {
           </nav>
 
           <p className="gallery-footer__copyright">
-            © 2026 Digital Art Gallery. Animation by Skiper UI.
+            © 2026 Digital Art Gallery.
           </p>
         </div>
       </div>
