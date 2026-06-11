@@ -8,7 +8,7 @@
     "country": "Italy",
     "museum": "Louvre Museum, Paris",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg?width=800",
-    "description": "One of the most famous portraits in the world, known for its mysterious smile."
+    "description": "A famous portrait known for the woman's gentle smile."
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "country": "Netherlands",
     "museum": "Museum of Modern Art, New York",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=800",
-    "description": "A powerful painting showing a swirling night sky over a quiet village."
+    "description": "A night scene with a bright swirling sky over a quiet village."
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "country": "Netherlands",
     "museum": "Mauritshuis, The Hague",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl%20with%20a%20Pearl%20Earring.jpg?width=800",
-    "description": "A beautiful portrait sometimes called the Mona Lisa of the North."
+    "description": "A quiet portrait of a young woman wearing a shining pearl earring."
   },
   {
     "id": 4,
@@ -41,11 +41,10 @@
     "country": "Japan",
     "museum": "Multiple collections",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg?width=800",
-    "description": "A famous Japanese woodblock print showing a huge wave near Mount Fuji."
+    "description": "A Japanese print showing a huge wave near Mount Fuji."
   },
-
   {
-    "id": 6,
+    "id": 5,
     "title": "The Arnolfini Portrait",
     "artist": "Jan van Eyck",
     "year": "1434",
@@ -53,32 +52,32 @@
     "country": "Belgium",
     "museum": "National Gallery, London",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Eyck%20-%20Arnolfini%20Portrait.jpg?width=800",
-    "description": "A detailed domestic portrait filled with symbols, reflections, and fine oil painting technique."
+    "description": "A detailed portrait of a couple inside a room."
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "Las Meninas",
-    "artist": "Diego Velazquez",
+    "artist": "Diego Velázquez",
     "year": "1656",
     "category": "Baroque",
     "country": "Spain",
     "museum": "Museo del Prado, Madrid",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg?width=800",
-    "description": "A complex royal court painting that plays with perspective, reflection, and the role of the viewer."
+    "description": "A royal court scene that shows the artist, a princess, and her attendants."
   },
   {
-    "id": 10,
+    "id": 7,
     "title": "The Persistence of Memory",
-    "artist": "Salvador Dali",
+    "artist": "Salvador Dalí",
     "year": "1931",
     "category": "Surrealism",
     "country": "Spain",
     "museum": "Museum of Modern Art, New York",
     "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
-    "description": "A landmark Surrealist painting known for its melting clocks and dreamlike desert landscape."
+    "description": "A dreamlike painting with melting clocks in a strange landscape."
   },
   {
-    "id": 11,
+    "id": 8,
     "title": "The School of Athens",
     "artist": "Raphael",
     "year": "1511",
@@ -86,10 +85,10 @@
     "country": "Italy",
     "museum": "Vatican Museums, Vatican City",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20scuola%20di%20Atene.jpg?width=800",
-    "description": "A masterpiece of Renaissance balance showing great philosophers in an ideal classical space."
+    "description": "A large painting of famous thinkers gathered in a classical building."
   },
   {
-    "id": 12,
+    "id": 9,
     "title": "Impression, Sunrise",
     "artist": "Claude Monet",
     "year": "1872",
@@ -97,10 +96,10 @@
     "country": "France",
     "museum": "Musee Marmottan Monet, Paris",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Impression%2C%20soleil%20levant.jpg?width=800",
-    "description": "The painting that gave Impressionism its name, showing light, atmosphere, and a loose brush style."
+    "description": "A soft harbor scene that helped give Impressionism its name."
   },
   {
-    "id": 13,
+    "id": 10,
     "title": "Lady with an Ermine",
     "artist": "Leonardo da Vinci",
     "year": "1490",
@@ -108,43 +107,43 @@
     "country": "Italy",
     "museum": "Czartoryski Museum, Krakow",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20an%20Ermine%20-%20Leonardo%20da%20Vinci%20-%20Google%20Art%20Project.jpg?width=800",
-    "description": "A refined Renaissance portrait showing Cecilia Gallerani holding an ermine, admired for its quiet movement and psychological presence."
+    "description": "A portrait of a young woman holding a small white ermine."
   },
   {
-    "id": 14,
+    "id": 11,
     "title": "The Night Watch",
     "artist": "Rembrandt van Rijn",
     "year": "1642",
-    "category": "Renaissance",
+    "category": "Baroque",
     "country": "Netherlands",
     "museum": "Rijksmuseum, Amsterdam",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Night%20Watch%20-%20HD.jpg?width=800",
-    "description": "A dramatic group portrait known for its theatrical light, motion, and civic guard composition."
+    "description": "A dramatic group portrait of a city guard in action."
   },
   {
-    "id": 15,
+    "id": 12,
     "title": "Portrait of Charles I",
     "artist": "Anthony van Dyck",
     "year": "1638",
     "category": "Baroque",
-    "country": "England",
+    "country": "Belgium",
     "museum": "National Gallery, London",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthonis%20van%20Dyck%20-%20Equestrian%20Portrait%20of%20Charles%20I%20-%20National%20Gallery%2C%20London.jpg?width=800",
-    "description": "A commanding royal portrait that presents Charles I with Baroque grandeur, authority, and theatrical presence."
+    "description": "A royal portrait that shows King Charles I on horseback."
   },
   {
-    "id": 16,
+    "id": 13,
     "title": "Portrait of Innocent X",
-    "artist": "Diego Velazquez",
+    "artist": "Diego Velázquez",
     "year": "1650",
     "category": "Baroque",
-    "country": "Italy",
+    "country": "Spain",
     "museum": "Galleria Doria Pamphilj, Rome",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20del%20Papa%20Inocencio%20X.%20Roma%2C%20by%20Diego%20Vel%C3%A1zquez.jpg?width=800",
-    "description": "A penetrating papal portrait admired for its psychological intensity, red tonal range, and direct gaze."
+    "description": "A strong portrait of Pope Innocent X with a direct gaze."
   },
   {
-    "id": 17,
+    "id": 14,
     "title": "The Laughing Cavalier",
     "artist": "Frans Hals",
     "year": "1624",
@@ -152,10 +151,10 @@
     "country": "Netherlands",
     "museum": "Wallace Collection, London",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cavalier%20soldier%20Hals-1624x.jpg?width=800",
-    "description": "A lively Baroque portrait known for its confident pose, ornate costume, and famously animated expression."
+    "description": "A lively portrait of a confident man in rich clothing."
   },
   {
-    "id": 18,
+    "id": 15,
     "title": "Water Lilies",
     "artist": "Claude Monet",
     "year": "1906",
@@ -163,10 +162,10 @@
     "country": "France",
     "museum": "Art Institute of Chicago",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Water%20Lilies%20-%201906%2C%20Ryerson.jpg?width=800",
-    "description": "A luminous study of reflections, floating lilies, and atmospheric color from Monet's garden series."
+    "description": "A peaceful view of water, flowers, and reflections."
   },
   {
-    "id": 19,
+    "id": 16,
     "title": "The Fighting Temeraire",
     "artist": "J. M. W. Turner",
     "year": "1839",
@@ -174,10 +173,10 @@
     "country": "England",
     "museum": "National Gallery, London",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Fighting%20Temeraire%2C%20JMW%20Turner%2C%20National%20Gallery.jpg?width=800",
-    "description": "A poetic scene of an old warship being towed at sunset, balancing industrial change with fading naval glory."
+    "description": "An old warship is pulled by a tugboat at sunset."
   },
   {
-    "id": 20,
+    "id": 17,
     "title": "Rain, Steam and Speed",
     "artist": "J. M. W. Turner",
     "year": "1844",
@@ -185,10 +184,10 @@
     "country": "England",
     "museum": "National Gallery, London",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rain%20Steam%20and%20Speed%20the%20Great%20Western%20Railway.jpg?width=800",
-    "description": "A dynamic vision of a train cutting through mist and weather, turning modern speed into atmosphere and motion."
+    "description": "A fast train moves through rain and mist."
   },
   {
-    "id": 21,
+    "id": 18,
     "title": "Wheatfield with Cypresses",
     "artist": "Vincent van Gogh",
     "year": "1889",
@@ -196,10 +195,10 @@
     "country": "Netherlands",
     "museum": "Metropolitan Museum of Art, New York",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat-Field-with-Cypresses-%281889%29-Vincent-van-Gogh-Met.jpg?width=800",
-    "description": "A vibrant landscape where wheat, cypress trees, and swirling clouds create a charged sense of light and movement."
+    "description": "A bright landscape with wheat, tall cypress trees, and moving clouds."
   },
   {
-    "id": 22,
+    "id": 19,
     "title": "Fine Wind, Clear Morning",
     "artist": "Katsushika Hokusai",
     "year": "1831",
@@ -207,10 +206,10 @@
     "country": "Japan",
     "museum": "Metropolitan Museum of Art, New York",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8C%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF%20%E5%87%B1%E9%A2%A8%E5%BF%AB%E6%99%B4%E3%80%8D-South%20Wind%2C%20Clear%20Sky%20%28Gaif%C5%AB%20kaisei%29%2C%20also%20known%20as%20Red%20Fuji%2C%20from%20the%20series%20Thirty-six%20Views%20of%20Mount%20Fuji%20%28Fugaku%20sanj%C5%ABrokkei%29%20MET%20DP141062.jpg?width=800",
-    "description": "A bold view of Mount Fuji, also known as Red Fuji, with clear sky and warm color shaping a calm monumental landscape."
+    "description": "A print of Mount Fuji under a clear sky, also called Red Fuji."
   },
   {
-    "id": 23,
+    "id": 20,
     "title": "Ejiri in Suruga Province",
     "artist": "Katsushika Hokusai",
     "year": "1832",
@@ -218,10 +217,10 @@
     "country": "Japan",
     "museum": "Multiple collections",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ejiri%20in%20the%20Suruga%20province.jpg?width=800",
-    "description": "A windswept scene from Hokusai's Mount Fuji series, contrasting human motion with Fuji's still presence."
+    "description": "A windy scene with travelers near Mount Fuji."
   },
   {
-    "id": 24,
+    "id": 21,
     "title": "Evening Snow at Kanbara",
     "artist": "Utagawa Hiroshige",
     "year": "1833",
@@ -229,10 +228,10 @@
     "country": "Japan",
     "museum": "Multiple collections",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/HIROSHIGE-Snow-Kanbara-Tokaido.jpg?width=800",
-    "description": "A quiet snowbound village from Hiroshige's Tokaido series, known for its restrained palette and night atmosphere."
+    "description": "A quiet village covered in snow at night."
   },
   {
-    "id": 25,
+    "id": 22,
     "title": "Thunderstorm Beneath the Summit",
     "artist": "Katsushika Hokusai",
     "year": "1831",
@@ -240,10 +239,10 @@
     "country": "Japan",
     "museum": "Multiple collections",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Katsushika%20Hokusai%2C%20tempesta%20sotto%20la%20vetta%2C%20dalla%20serie%20delle%2036%20vedute%20del%20monte%20fuji%2C%201831%20ca.jpg?width=800",
-    "description": "A dramatic Mount Fuji print, also called Black Fuji, where lightning and dark cloud forms create a tense mountain scene."
+    "description": "A print of Mount Fuji with dark clouds and lightning below the summit."
   },
   {
-    "id": 26,
+    "id": 23,
     "title": "Hunters in the Snow",
     "artist": "Pieter Bruegel the Elder",
     "year": "1565",
@@ -251,10 +250,10 @@
     "country": "Netherlands",
     "museum": "Kunsthistorisches Museum, Vienna",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Hunters%20in%20the%20Snow%20%28Winter%29%20-%20Google%20Art%20Project.jpg?width=800",
-    "description": "A winter landscape where returning hunters, village life, and distant ice create one of Bruegel's most atmospheric scenes."
+    "description": "A winter village scene with hunters returning through the snow."
   },
   {
-    "id": 27,
+    "id": 24,
     "title": "The Peasant Wedding",
     "artist": "Pieter Bruegel the Elder",
     "year": "1567",
@@ -262,32 +261,32 @@
     "country": "Netherlands",
     "museum": "Kunsthistorisches Museum, Vienna",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Peasant%20Wedding%20-%20Google%20Art%20Project%202.jpg?width=800",
-    "description": "A vivid rural celebration that turns everyday communal life into a carefully observed Northern Renaissance composition."
+    "description": "A busy village wedding with people eating and celebrating."
   },
   {
-    "id": 28,
+    "id": 25,
     "title": "Self-Portrait",
-    "artist": "Albrecht Durer",
+    "artist": "Albrecht Dürer",
     "year": "1500",
     "category": "Northern Renaissance",
     "country": "Germany",
     "museum": "Alte Pinakothek, Munich",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht%20D%C3%BCrer%20-%201500%20self-portrait%20%28High%20resolution%20and%20detail%29.jpg?width=800",
-    "description": "A frontal self-portrait by Durer that presents the artist with unusual dignity, symmetry, and controlled detail."
+    "description": "A serious self-portrait of the artist facing the viewer."
   },
   {
-    "id": 29,
+    "id": 26,
     "title": "Young Hare",
-    "artist": "Albrecht Durer",
+    "artist": "Albrecht Dürer",
     "year": "1502",
     "category": "Northern Renaissance",
     "country": "Germany",
     "museum": "Albertina, Vienna",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht%20D%C3%BCrer%20-%20Hare%2C%201502%20-%20Google%20Art%20Project.jpg?width=800",
-    "description": "A precise watercolor study admired for its natural detail, delicate fur texture, and close observation."
+    "description": "A careful study of a hare with soft fur and fine detail."
   },
   {
-    "id": 30,
+    "id": 27,
     "title": "Portrait of Erasmus of Rotterdam",
     "artist": "Hans Holbein the Younger",
     "year": "1523",
@@ -295,6 +294,160 @@
     "country": "Germany",
     "museum": "Kunstmuseum Basel",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Erasmus%20of%20Rotterdam%20by%20Hans%20Holbein%20d.%20J.%20in%20Kunstmuseum%20Basel.jpg?width=800",
-    "description": "A refined scholar portrait that captures Erasmus through restrained pose, sharp drawing, and quiet intellectual focus."
+    "description": "A portrait of the scholar Erasmus writing at a desk."
+  },
+  {
+    "id": 28,
+    "title": "The Son of Man",
+    "artist": "René Magritte",
+    "year": "1964",
+    "category": "Surrealism",
+    "country": "Belgium",
+    "museum": "Private collection",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/e5/Magritte_TheSonOfMan.jpg",
+    "description": "A man in a bowler hat has his face hidden by a green apple."
+  },
+  {
+    "id": 29,
+    "title": "The False Mirror",
+    "artist": "René Magritte",
+    "year": "1928",
+    "category": "Surrealism",
+    "country": "Belgium",
+    "museum": "Museum of Modern Art, New York",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/11/The_False_Mirror.jpg",
+    "description": "A large eye reflects a bright sky with clouds."
+  },
+  {
+    "id": 30,
+    "title": "Two Children Are Threatened by a Nightingale",
+    "artist": "Max Ernst",
+    "year": "1924",
+    "category": "Surrealism",
+    "country": "Germany",
+    "museum": "Museum of Modern Art, New York",
+    "image": "https://www.moma.org/media/W1siZiIsIjYwMTE2NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=73b76f420f9860d2",
+    "description": "A strange scene shows children, a small house, and a dreamlike sense of danger."
+  },
+  {
+    "id": 31,
+    "title": "Ubu Imperator",
+    "artist": "Max Ernst",
+    "year": "1923",
+    "category": "Surrealism",
+    "country": "Germany",
+    "museum": "Musee National d'Art Moderne, Paris",
+    "image": "https://artblart.com/wp-content/uploads/2013/08/ubu-imperator-web.jpg?w=801",
+    "description": "A strange red figure balances like a spinning top in an empty landscape."
+  },
+  {
+    "id": 32,
+    "title": "Café Terrace at Night",
+    "artist": "Vincent van Gogh",
+    "year": "1888",
+    "category": "Post-Impressionism",
+    "country": "Netherlands",
+    "museum": "Kröller-Müller Museum, Otterlo",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20-%20Cafe%20Terrace%20at%20Night%20%28Yorck%29.jpg?width=800",
+    "description": "A glowing night cafe scene with warm lights and a deep blue sky."
+  },
+  {
+    "id": 33,
+    "title": "Sunflowers",
+    "artist": "Vincent van Gogh",
+    "year": "1888",
+    "category": "Post-Impressionism",
+    "country": "Netherlands",
+    "museum": "National Gallery, London",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20128.jpg?width=800",
+    "description": "A bright still life of sunflowers in a simple vase."
+  },
+  {
+    "id": 34,
+    "title": "The Bedroom",
+    "artist": "Vincent van Gogh",
+    "year": "1888",
+    "category": "Post-Impressionism",
+    "country": "Netherlands",
+    "museum": "Van Gogh Museum, Amsterdam",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Bedroom%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "A colorful view of Van Gogh's bedroom in Arles."
+  },
+  {
+    "id": 35,
+    "title": "The Card Players",
+    "artist": "Paul Cézanne",
+    "year": "1895",
+    "category": "Post-Impressionism",
+    "country": "France",
+    "museum": "Musee d'Orsay, Paris",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Joueurs%20de%20cartes%2C%20par%20Paul%20C%C3%A9zanne.jpg?width=800",
+    "description": "Two men sit quietly at a table playing cards."
+  },
+  {
+    "id": 36,
+    "title": "Woman with a Parasol",
+    "artist": "Claude Monet",
+    "year": "1875",
+    "category": "Impressionism",
+    "country": "France",
+    "museum": "National Gallery of Art, Washington, D.C.",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Woman%20with%20a%20Parasol%20-%20Madame%20Monet%20and%20Her%20Son%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "A bright outdoor portrait of a woman holding a parasol in the wind."
+  },
+  {
+    "id": 37,
+    "title": "Haystacks",
+    "artist": "Claude Monet",
+    "year": "1891",
+    "category": "Impressionism",
+    "country": "France",
+    "museum": "Multiple collections",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Grainstack%2C%20Sun%20in%20the%20Mist%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "A haystack scene where Monet studies light, color, and changing weather."
+  },
+  {
+    "id": 38,
+    "title": "Rouen Cathedral series",
+    "artist": "Claude Monet",
+    "year": "1894",
+    "category": "Impressionism",
+    "country": "France",
+    "museum": "Multiple collections",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Rouen%20Cathedral%2C%20West%20Fa%C3%A7ade%2C%20Sunlight%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "A view of Rouen Cathedral painted to show how light changes the same subject."
+  },
+  {
+    "id": 39,
+    "title": "Wanderer above the Sea of Fog",
+    "artist": "Caspar David Friedrich",
+    "year": "1818",
+    "category": "Romanticism",
+    "country": "Germany",
+    "museum": "Hamburger Kunsthalle, Hamburg",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Caspar%20David%20Friedrich%20-%20Wanderer%20above%20the%20Sea%20of%20Fog.jpeg?width=800",
+    "description": "A lone figure stands above misty mountains and looks into the distance."
+  },
+  {
+    "id": 40,
+    "title": "The Hay Wain",
+    "artist": "John Constable",
+    "year": "1821",
+    "category": "Romanticism",
+    "country": "England",
+    "museum": "National Gallery, London",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Constable%20-%20The%20Hay%20Wain%20%281821%29.jpg?width=800",
+    "description": "A calm countryside scene with a wagon crossing shallow water."
+  },
+  {
+    "id": 41,
+    "title": "The Third of May 1808",
+    "artist": "Francisco Goya",
+    "year": "1814",
+    "category": "Romanticism",
+    "country": "Spain",
+    "museum": "Museo del Prado, Madrid",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_in_Google_Earth.jpg?width=800",
+    "description": "A powerful scene showing civilians facing execution during war."
   }
 ]

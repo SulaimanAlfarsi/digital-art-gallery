@@ -606,7 +606,7 @@ a {
   display: flex;
   gap: 1rem;
   width: max-content;
-  animation: dag-hero-marquee-scroll 42s linear infinite;
+  animation: dag-hero-marquee-scroll var(--marquee-duration, 42s) linear infinite;
   will-change: transform;
 }
 
@@ -1216,6 +1216,7 @@ a {
   gap: clamp(0.75rem, 1.5vw, 1.15rem);
 }
 
+.artwork-grid > div,
 .artwork-grid .artwork-card {
   flex: 0 1 clamp(10.5rem, 16vw, 13rem);
   width: clamp(10.5rem, 16vw, 13rem);
@@ -1226,10 +1227,64 @@ a {
 }
 
 @media (max-width: 390px) {
+  .artwork-grid > div,
   .artwork-grid .artwork-card {
     flex-basis: min(100%, 13rem);
     width: min(100%, 13rem);
   }
+}
+
+.artwork-filter {
+  display: flex;
+  width: min(100%, 76rem);
+  margin: 0 auto clamp(1.5rem, 3vw, 2.25rem);
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding: 0.15rem 0.1rem 0.45rem;
+  scrollbar-width: none;
+}
+
+.artwork-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.artwork-filter__button {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg-card), transparent 8%);
+  color: var(--text-muted);
+  padding: 0.62rem 0.9rem;
+  box-shadow: 0 10px 26px rgb(23 33 43 / 8%);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.artwork-filter__button:hover {
+  border-color: color-mix(in srgb, var(--gold), transparent 45%);
+  color: var(--gold-light);
+  transform: translateY(-0.08rem);
+}
+
+.artwork-filter__button--active {
+  border-color: color-mix(in srgb, var(--gold), transparent 22%);
+  background: var(--gold);
+  color: var(--primary-foreground);
+  box-shadow: 0 16px 34px rgb(182 120 22 / 22%);
+}
+
+.artwork-filter__button--active:hover {
+  color: var(--primary-foreground);
 }
 
 .category-grid {
