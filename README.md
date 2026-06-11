@@ -227,4 +227,6 @@ The footer crowd animation is adapted from the Skiper UI Crowd Canvas example, i
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Sulaiman Al-Farsi.
+This project is licensed under the MIT License.
+
+Artwork images belong to their original artists, museums, or public-domain sources. This project uses them for educational and gallery display purposes only.
