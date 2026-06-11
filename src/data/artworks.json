@@ -68,14 +68,14 @@
   },
   {
     "id": 10,
-    "title": "The Last Supper",
-    "artist": "Leonardo da Vinci",
-    "year": "1498",
-    "category": "Renaissance",
-    "country": "Italy",
-    "museum": "Santa Maria delle Grazie, Milan",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20The%20Last%20Supper%20high%20res.jpg?width=800",
-    "description": "A monumental mural showing the emotional moment when Jesus announces that one disciple will betray him."
+    "title": "The Persistence of Memory",
+    "artist": "Salvador Dali",
+    "year": "1931",
+    "category": "Surrealism",
+    "country": "Spain",
+    "museum": "Museum of Modern Art, New York",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
+    "description": "A landmark Surrealist painting known for its melting clocks and dreamlike desert landscape."
   },
   {
     "id": 11,
