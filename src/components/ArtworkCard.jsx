@@ -1,10 +1,117 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 
+import { useEffect, useState } from "react";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
+const fallbackPalette = {
+  primary: "var(--text-main)",
+  secondary: "var(--terracotta)",
+};
+
+function getColorScore(red, green, blue) {
+  const max = Math.max(red, green, blue);
+  const min = Math.min(red, green, blue);
+  const saturation = max === 0 ? 0 : (max - min) / max;
+  const brightness = (red + green + blue) / 3;
+
+  if (brightness < 35 || brightness > 232 || saturation < 0.14) {
+    return 0;
+  }
+
+  const balancedBrightness = 1 - Math.abs(brightness - 128) / 128;
+  return saturation * 1.8 + balancedBrightness;
+}
+
+function colorDistance(first, second) {
+  return Math.abs(first.red - second.red) +
+    Math.abs(first.green - second.green) +
+    Math.abs(first.blue - second.blue);
+}
+
+function extractPalette(image) {
+  const canvas = document.createElement("canvas");
+  const size = 36;
+  canvas.width = size;
+  canvas.height = size;
+
+  const context = canvas.getContext("2d", { willReadFrequently: true });
+  if (!context) {
+    return fallbackPalette;
+  }
+
+  context.drawImage(image, 0, 0, size, size);
+
+  const { data } = context.getImageData(0, 0, size, size);
+  const candidates = [];
+
+  for (let index = 0; index < data.length; index += 16) {
+    const red = data[index];
+    const green = data[index + 1];
+    const blue = data[index + 2];
+    const alpha = data[index + 3];
+
+    if (alpha < 200) {
+      continue;
+    }
+
+    const score = getColorScore(red, green, blue);
+    if (score > 0) {
+      candidates.push({ red, green, blue, score });
+    }
+  }
+
+  if (candidates.length === 0) {
+    return fallbackPalette;
+  }
+
+  candidates.sort((first, second) => second.score - first.score);
+
+  const primary = candidates[0];
+  const secondary =
+    candidates.find((candidate) => colorDistance(primary, candidate) > 110) ||
+    candidates[Math.min(8, candidates.length - 1)] ||
+    primary;
+
+  return {
+    primary: `rgb(${primary.red} ${primary.green} ${primary.blue})`,
+    secondary: `rgb(${secondary.red} ${secondary.green} ${secondary.blue})`,
+  };
+}
+
+function getProxiedImageUrl(image) {
+  return `/api/image-proxy?url=${encodeURIComponent(image)}`;
+}
+
 export default function ArtworkCard({ artwork }) {
+  const [palette, setPalette] = useState(fallbackPalette);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = getProxiedImageUrl(artwork.image);
+
+    image.onload = () => {
+      try {
+        setPalette(extractPalette(image));
+      } catch {
+        setPalette(fallbackPalette);
+      }
+    };
+
+    image.onerror = () => {
+      setPalette(fallbackPalette);
+    };
+  }, [artwork.image]);
+
   return (
-    <article className="artwork-card" tabIndex={0}>
+    <article
+      className="artwork-card"
+      style={{
+        "--card-stroke-1": palette.primary,
+        "--card-stroke-2": palette.secondary,
+      }}
+      tabIndex={0}
+    >
       <div className="artwork-card-media">
         <img
           src={artwork.image}
