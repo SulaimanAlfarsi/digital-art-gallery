@@ -224,3 +224,7 @@ The default metadata uses `https://riwaq-art.com` as its canonical metadata base
 ## Credits
 
 The footer crowd animation is adapted from the Skiper UI Crowd Canvas example, inspired by a CodePen by Zadvorsky, with illustrations from [Open Peeps](https://www.openpeeps.com/). See the attribution comment in `src/components/v1/skiper39.tsx` for implementation and license details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Sulaiman Al-Farsi.
