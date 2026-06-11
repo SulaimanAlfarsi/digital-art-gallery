@@ -7,7 +7,8 @@
     "category": "عصر النهضة",
     "country": "إيطاليا",
     "museum": "متحف اللوفر، باريس",
-    "description": "لوحة بورتريه شهيرة تُعرف بابتسامة المرأة الهادئة والغامضة."
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg?width=800",
+    "description": "بورتريه شهير يُعرف بابتسامة المرأة الهادئة."
   },
   {
     "id": 2,
@@ -17,6 +18,7 @@
     "category": "ما بعد الانطباعية",
     "country": "هولندا",
     "museum": "متحف الفن الحديث، نيويورك",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=800",
     "description": "مشهد ليلي بسماء مشرقة ودوّامات زرقاء فوق قرية هادئة."
   },
   {
@@ -27,6 +29,7 @@
     "category": "الباروك",
     "country": "هولندا",
     "museum": "متحف ماورتشهاوس، لاهاي",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl%20with%20a%20Pearl%20Earring.jpg?width=800",
     "description": "بورتريه هادئ لفتاة ترتدي قرطًا لؤلؤيًا لامعًا."
   },
   {
@@ -37,6 +40,7 @@
     "category": "الأوكييو-إه",
     "country": "اليابان",
     "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wave%20off%20Kanagawa.jpg?width=800",
     "description": "مطبوعة يابانية تُظهر موجة ضخمة بالقرب من جبل فوجي."
   },
   {
@@ -47,6 +51,7 @@
     "category": "عصر النهضة الشمالية",
     "country": "بلجيكا",
     "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Eyck%20-%20Arnolfini%20Portrait.jpg?width=800",
     "description": "بورتريه مفصل لزوجين داخل غرفة."
   },
   {
@@ -57,6 +62,7 @@
     "category": "الباروك",
     "country": "إسبانيا",
     "museum": "متحف ديل برادو، مدريد",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2001.jpg?width=800",
     "description": "مشهد من البلاط الملكي يظهر الفنان وأميرة وخادماتها."
   },
   {
@@ -67,6 +73,7 @@
     "category": "السريالية",
     "country": "إسبانيا",
     "museum": "متحف الفن الحديث، نيويورك",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
     "description": "لوحة حالمة تضم ساعات ذائبة في منظر طبيعي غريب."
   },
   {
@@ -77,6 +84,7 @@
     "category": "عصر النهضة",
     "country": "إيطاليا",
     "museum": "متاحف الفاتيكان، مدينة الفاتيكان",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20scuola%20di%20Atene.jpg?width=800",
     "description": "لوحة كبيرة تجمع مفكرين مشهورين داخل مبنى كلاسيكي."
   },
   {
@@ -87,6 +95,7 @@
     "category": "الانطباعية",
     "country": "فرنسا",
     "museum": "متحف مارموتان مونيه، باريس",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Impression%2C%20soleil%20levant.jpg?width=800",
     "description": "مشهد ناعم لميناء ساعد في إطلاق اسم المدرسة الانطباعية."
   },
   {
@@ -97,6 +106,348 @@
     "category": "عصر النهضة",
     "country": "إيطاليا",
     "museum": "متحف تشارتوريسكي، كراكوف",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20an%20Ermine%20-%20Leonardo%20da%20Vinci%20-%20Google%20Art%20Project.jpg?width=800",
     "description": "بورتريه لامرأة شابة تحمل حيوان قاقم أبيض صغير."
+  },
+  {
+    "id": 11,
+    "title": "الحرس الليلي",
+    "artist": "رامبرانت فان راين",
+    "year": "1642",
+    "category": "الباروك",
+    "country": "هولندا",
+    "museum": "متحف ريكز، أمستردام",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Night%20Watch%20-%20HD.jpg?width=800",
+    "description": "بورتريه جماعي درامي لحرس مدينة في حالة حركة."
+  },
+  {
+    "id": 12,
+    "title": "بورتريه تشارلز الأول",
+    "artist": "أنتوني فان دايك",
+    "year": "1638",
+    "category": "الباروك",
+    "country": "بلجيكا",
+    "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthonis%20van%20Dyck%20-%20Equestrian%20Portrait%20of%20Charles%20I%20-%20National%20Gallery%2C%20London.jpg?width=800",
+    "description": "بورتريه ملكي يُظهر الملك تشارلز الأول على ظهر حصان."
+  },
+  {
+    "id": 13,
+    "title": "بورتريه البابا إنوسنت العاشر",
+    "artist": "دييغو فيلاسكيز",
+    "year": "1650",
+    "category": "الباروك",
+    "country": "إسبانيا",
+    "museum": "غاليريا دوريا بامفيلي، روما",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20del%20Papa%20Inocencio%20X.%20Roma%2C%20by%20Diego%20Vel%C3%A1zquez.jpg?width=800",
+    "description": "بورتريه قوي للبابا إنوسنت العاشر بنظرة مباشرة."
+  },
+  {
+    "id": 14,
+    "title": "الفارس الضاحك",
+    "artist": "فرانس هالس",
+    "year": "1624",
+    "category": "الباروك",
+    "country": "هولندا",
+    "museum": "مجموعة والاس، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cavalier%20soldier%20Hals-1624x.jpg?width=800",
+    "description": "بورتريه نابض بالحياة لرجل واثق يرتدي ملابس فاخرة."
+  },
+  {
+    "id": 15,
+    "title": "زنابق الماء",
+    "artist": "كلود مونيه",
+    "year": "1906",
+    "category": "الانطباعية",
+    "country": "فرنسا",
+    "museum": "معهد الفن في شيكاغو",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Water%20Lilies%20-%201906%2C%20Ryerson.jpg?width=800",
+    "description": "منظر هادئ للماء والزهور والانعكاسات."
+  },
+  {
+    "id": 16,
+    "title": "السفينة تيميرير المقاتلة",
+    "artist": "جي. إم. دبليو. تيرنر",
+    "year": "1839",
+    "category": "الرومانسية",
+    "country": "إنجلترا",
+    "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Fighting%20Temeraire%2C%20JMW%20Turner%2C%20National%20Gallery.jpg?width=800",
+    "description": "سفينة حربية قديمة تُسحب بواسطة قارب قطر عند غروب الشمس."
+  },
+  {
+    "id": 17,
+    "title": "المطر والبخار والسرعة",
+    "artist": "جي. إم. دبليو. تيرنر",
+    "year": "1844",
+    "category": "الرومانسية",
+    "country": "إنجلترا",
+    "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rain%20Steam%20and%20Speed%20the%20Great%20Western%20Railway.jpg?width=800",
+    "description": "قطار سريع يتحرك عبر المطر والضباب."
+  },
+  {
+    "id": 18,
+    "title": "حقل قمح مع أشجار السرو",
+    "artist": "فنسنت فان غوخ",
+    "year": "1889",
+    "category": "ما بعد الانطباعية",
+    "country": "هولندا",
+    "museum": "متحف المتروبوليتان للفنون، نيويورك",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat-Field-with-Cypresses-%281889%29-Vincent-van-Gogh-Met.jpg?width=800",
+    "description": "منظر طبيعي مشرق يضم القمح وأشجار السرو الطويلة وغيومًا متحركة."
+  },
+  {
+    "id": 19,
+    "title": "ريح لطيفة وصباح صافٍ",
+    "artist": "كاتسوشيكا هوكوساي",
+    "year": "1831",
+    "category": "الأوكييو-إه",
+    "country": "اليابان",
+    "museum": "متحف المتروبوليتان للفنون، نيويورك",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8C%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF%20%E5%87%B1%E9%A2%A8%E5%BF%AB%E6%99%B4%E3%80%8D-South%20Wind%2C%20Clear%20Sky%20%28Gaif%C5%AB%20kaisei%29%2C%20also%20known%20as%20Red%20Fuji%2C%20from%20the%20series%20Thirty-six%20Views%20of%20Mount%20Fuji%20%28Fugaku%20sanj%C5%ABrokkei%29%20MET%20DP141062.jpg?width=800",
+    "description": "مطبوعة لجبل فوجي تحت سماء صافية، وتُعرف أيضًا باسم فوجي الأحمر."
+  },
+  {
+    "id": 20,
+    "title": "إجيري في مقاطعة سوروغا",
+    "artist": "كاتسوشيكا هوكوساي",
+    "year": "1832",
+    "category": "الأوكييو-إه",
+    "country": "اليابان",
+    "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ejiri%20in%20the%20Suruga%20province.jpg?width=800",
+    "description": "مشهد عاصف لمسافرين بالقرب من جبل فوجي."
+  },
+  {
+    "id": 21,
+    "title": "ثلج المساء في كانبارا",
+    "artist": "أوتاغاوا هيروشيغه",
+    "year": "1833",
+    "category": "الأوكييو-إه",
+    "country": "اليابان",
+    "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/HIROSHIGE-Snow-Kanbara-Tokaido.jpg?width=800",
+    "description": "قرية هادئة مغطاة بالثلج ليلًا."
+  },
+  {
+    "id": 22,
+    "title": "عاصفة رعدية أسفل القمة",
+    "artist": "كاتسوشيكا هوكوساي",
+    "year": "1831",
+    "category": "الأوكييو-إه",
+    "country": "اليابان",
+    "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Katsushika%20Hokusai%2C%20tempesta%20sotto%20la%20vetta%2C%20dalla%20serie%20delle%2036%20vedute%20del%20monte%20fuji%2C%201831%20ca.jpg?width=800",
+    "description": "مطبوعة لجبل فوجي مع غيوم داكنة وبرق أسفل القمة."
+  },
+  {
+    "id": 23,
+    "title": "الصيادون في الثلج",
+    "artist": "بيتر بروغل الأكبر",
+    "year": "1565",
+    "category": "عصر النهضة الشمالية",
+    "country": "هولندا",
+    "museum": "متحف تاريخ الفن، فيينا",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Hunters%20in%20the%20Snow%20%28Winter%29%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "مشهد شتوي لقرية يظهر فيه صيادون عائدون عبر الثلج."
+  },
+  {
+    "id": 24,
+    "title": "عرس الفلاحين",
+    "artist": "بيتر بروغل الأكبر",
+    "year": "1567",
+    "category": "عصر النهضة الشمالية",
+    "country": "هولندا",
+    "museum": "متحف تاريخ الفن، فيينا",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Peasant%20Wedding%20-%20Google%20Art%20Project%202.jpg?width=800",
+    "description": "عرس قروي مزدحم يظهر فيه الناس يأكلون ويحتفلون."
+  },
+  {
+    "id": 25,
+    "title": "بورتريه ذاتي",
+    "artist": "ألبرخت دورر",
+    "year": "1500",
+    "category": "عصر النهضة الشمالية",
+    "country": "ألمانيا",
+    "museum": "ألته بيناكوتيك، ميونخ",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht%20D%C3%BCrer%20-%201500%20self-portrait%20%28High%20resolution%20and%20detail%29.jpg?width=800",
+    "description": "بورتريه ذاتي جاد للفنان وهو يواجه المشاهد مباشرة."
+  },
+  {
+    "id": 26,
+    "title": "الأرنب الصغير",
+    "artist": "ألبرخت دورر",
+    "year": "1502",
+    "category": "عصر النهضة الشمالية",
+    "country": "ألمانيا",
+    "museum": "ألبرتينا، فيينا",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht%20D%C3%BCrer%20-%20Hare%2C%201502%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "دراسة دقيقة لأرنب بفرو ناعم وتفاصيل رفيعة."
+  },
+  {
+    "id": 27,
+    "title": "بورتريه إراسموس من روتردام",
+    "artist": "هانس هولباين الأصغر",
+    "year": "1523",
+    "category": "عصر النهضة الشمالية",
+    "country": "ألمانيا",
+    "museum": "متحف الفن في بازل",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Erasmus%20of%20Rotterdam%20by%20Hans%20Holbein%20d.%20J.%20in%20Kunstmuseum%20Basel.jpg?width=800",
+    "description": "بورتريه للعالم إراسموس وهو يكتب على مكتب."
+  },
+  {
+    "id": 28,
+    "title": "ابن الإنسان",
+    "artist": "رينيه ماغريت",
+    "year": "1964",
+    "category": "السريالية",
+    "country": "بلجيكا",
+    "museum": "مجموعة خاصة",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/e5/Magritte_TheSonOfMan.jpg",
+    "description": "رجل يرتدي قبعة بولر يختفي وجهه خلف تفاحة خضراء."
+  },
+  {
+    "id": 29,
+    "title": "المرآة الزائفة",
+    "artist": "رينيه ماغريت",
+    "year": "1928",
+    "category": "السريالية",
+    "country": "بلجيكا",
+    "museum": "متحف الفن الحديث، نيويورك",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/11/The_False_Mirror.jpg",
+    "description": "عين كبيرة تعكس سماءً مشرقة مليئة بالغيوم."
+  },
+  {
+    "id": 30,
+    "title": "طفلان مهددان من عصفور عندليب",
+    "artist": "ماكس إرنست",
+    "year": "1924",
+    "category": "السريالية",
+    "country": "ألمانيا",
+    "museum": "متحف الفن الحديث، نيويورك",
+    "image": "https://www.moma.org/media/W1siZiIsIjYwMTE2NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=73b76f420f9860d2",
+    "description": "مشهد غريب يظهر طفلين ومنزلًا صغيرًا وإحساسًا حالمًا بالخطر."
+  },
+  {
+    "id": 31,
+    "title": "أوبو الإمبراطور",
+    "artist": "ماكس إرنست",
+    "year": "1923",
+    "category": "السريالية",
+    "country": "ألمانيا",
+    "museum": "المتحف الوطني للفن الحديث، باريس",
+    "image": "https://artblart.com/wp-content/uploads/2013/08/ubu-imperator-web.jpg?w=801",
+    "description": "شخصية حمراء غريبة تتوازن مثل البلبل الدوّار في منظر فارغ."
+  },
+  {
+    "id": 32,
+    "title": "شرفة مقهى في الليل",
+    "artist": "فنسنت فان غوخ",
+    "year": "1888",
+    "category": "ما بعد الانطباعية",
+    "country": "هولندا",
+    "museum": "متحف كرولر-مولر، أوترلو",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20-%20Cafe%20Terrace%20at%20Night%20%28Yorck%29.jpg?width=800",
+    "description": "مشهد ليلي لمقهى مضاء بأضواء دافئة وسماء زرقاء عميقة."
+  },
+  {
+    "id": 33,
+    "title": "دوّار الشمس",
+    "artist": "فنسنت فان غوخ",
+    "year": "1888",
+    "category": "ما بعد الانطباعية",
+    "country": "هولندا",
+    "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20128.jpg?width=800",
+    "description": "طبيعة صامتة مشرقة لزهور دوّار الشمس في مزهرية بسيطة."
+  },
+  {
+    "id": 34,
+    "title": "غرفة النوم",
+    "artist": "فنسنت فان غوخ",
+    "year": "1888",
+    "category": "ما بعد الانطباعية",
+    "country": "هولندا",
+    "museum": "متحف فان غوخ، أمستردام",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Bedroom%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "منظر ملون لغرفة نوم فان غوخ في آرل."
+  },
+  {
+    "id": 35,
+    "title": "لاعِبا الورق",
+    "artist": "بول سيزان",
+    "year": "1895",
+    "category": "ما بعد الانطباعية",
+    "country": "فرنسا",
+    "museum": "متحف أورسيه، باريس",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Joueurs%20de%20cartes%2C%20par%20Paul%20C%C3%A9zanne.jpg?width=800",
+    "description": "رجلان يجلسان بهدوء على طاولة ويلعبان الورق."
+  },
+  {
+    "id": 36,
+    "title": "امرأة تحمل مظلة",
+    "artist": "كلود مونيه",
+    "year": "1875",
+    "category": "الانطباعية",
+    "country": "فرنسا",
+    "museum": "المعرض الوطني للفنون، واشنطن العاصمة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Woman%20with%20a%20Parasol%20-%20Madame%20Monet%20and%20Her%20Son%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "بورتريه خارجي مشرق لامرأة تحمل مظلة في مهب الريح."
+  },
+  {
+    "id": 37,
+    "title": "أكوام القش",
+    "artist": "كلود مونيه",
+    "year": "1891",
+    "category": "الانطباعية",
+    "country": "فرنسا",
+    "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Grainstack%2C%20Sun%20in%20the%20Mist%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "مشهد لأكوام القش درس فيه مونيه الضوء واللون وتغيرات الطقس."
+  },
+  {
+    "id": 38,
+    "title": "سلسلة كاتدرائية روان",
+    "artist": "كلود مونيه",
+    "year": "1894",
+    "category": "الانطباعية",
+    "country": "فرنسا",
+    "museum": "مجموعات متعددة",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Rouen%20Cathedral%2C%20West%20Fa%C3%A7ade%2C%20Sunlight%20-%20Google%20Art%20Project.jpg?width=800",
+    "description": "منظر لكاتدرائية روان رُسم لإظهار كيف يغيّر الضوء الموضوع نفسه."
+  },
+  {
+    "id": 39,
+    "title": "المتجوّل فوق بحر الضباب",
+    "artist": "كاسبار دافيد فريدريش",
+    "year": "1818",
+    "category": "الرومانسية",
+    "country": "ألمانيا",
+    "museum": "هامبورغر كونستهاله، هامبورغ",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Caspar%20David%20Friedrich%20-%20Wanderer%20above%20the%20Sea%20of%20Fog.jpeg?width=800",
+    "description": "شخص وحيد يقف فوق جبال ضبابية وينظر إلى البعيد."
+  },
+  {
+    "id": 40,
+    "title": "عربة القش",
+    "artist": "جون كونستابل",
+    "year": "1821",
+    "category": "الرومانسية",
+    "country": "إنجلترا",
+    "museum": "المعرض الوطني، لندن",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Constable%20-%20The%20Hay%20Wain%20%281821%29.jpg?width=800",
+    "description": "مشهد ريفي هادئ لعربة تعبر مياهًا ضحلة."
+  },
+  {
+    "id": 41,
+    "title": "الثالث من مايو 1808",
+    "artist": "فرانسيسكو غويا",
+    "year": "1814",
+    "category": "الرومانسية",
+    "country": "إسبانيا",
+    "museum": "متحف ديل برادو، مدريد",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_in_Google_Earth.jpg?width=800",
+    "description": "مشهد قوي يُظهر مدنيين يواجهون الإعدام أثناء الحرب."
   }
 ]

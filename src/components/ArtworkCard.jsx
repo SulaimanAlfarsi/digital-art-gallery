@@ -90,7 +90,7 @@ function getProxiedImageUrl(image) {
 }
 
 export default function ArtworkCard({ artwork }) {
-  const { language, tCategory } = useI18n();
+  const { language } = useI18n();
   const [palette, setPalette] = useState(fallbackPalette);
   const localizedArtwork =
     language === "ar" ? artworksArabicById.get(artwork.id) ?? artwork : artwork;
@@ -157,7 +157,7 @@ export default function ArtworkCard({ artwork }) {
           blurIntensity={0.75}
         />
         <div className="artwork-card-overlay">
-          <p>{tCategory(artwork.category)}</p>
+          <p>{localizedArtwork.category}</p>
           <h2>{localizedArtwork.title}</h2>
           <span>{localizedArtwork.artist} - {localizedArtwork.year}</span>
         </div>
