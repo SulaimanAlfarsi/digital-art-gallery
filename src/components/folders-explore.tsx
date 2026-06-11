@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 
 import { projects, type Project } from "@/lib/folder-projects"
+import { useI18n } from "@/lib/i18n-client"
 
 const imagePositions = [
   { x: -80, rotate: -10 },
@@ -14,6 +15,7 @@ const imagePositions = [
 ]
 
 function GalleryFolderCard({ project, index }: { project: Project; index: number }) {
+  const { t, tCategory, tCategoryDescription } = useI18n()
   const [isHovered, setIsHovered] = useState(false)
 
   return (
@@ -136,16 +138,20 @@ function GalleryFolderCard({ project, index }: { project: Project; index: number
           }}
         >
           <div className="project-folder-card__title-row relative">
-            <h3 className="project-folder-card__title">{project.title}</h3>
+            <h3 className="project-folder-card__title">{tCategory(project.title)}</h3>
           </div>
           <div className="relative h-[48px]">
             <div className="absolute inset-x-0 top-0 h-px bg-[color:var(--border)]" />
             <div className="project-folder-card__footer absolute inset-0 flex items-center justify-between">
               <div className="project-folder-card__count flex items-center gap-1.5">
                 <span>{project.clipCount}</span>
-                <span>works</span>
+                <span>{t("explore.works")}</span>
               </div>
-              {project.description && <span className="project-folder-card__meta">{project.description}</span>}
+              {project.description && (
+                <span className="project-folder-card__meta">
+                  {tCategoryDescription(project.title, project.description)}
+                </span>
+              )}
             </div>
           </div>
         </motion.div>
@@ -155,6 +161,8 @@ function GalleryFolderCard({ project, index }: { project: Project; index: number
 }
 
 function FoldersExploreContent() {
+  const { t } = useI18n()
+
   return (
     <section className="folders-explore">
       <div
@@ -167,8 +175,8 @@ function FoldersExploreContent() {
         <main className="folders-explore__inner">
           <div className="folders-explore__header">
             <div>
-              <p className="eyebrow">Explore</p>
-              <h1>Creative project folders</h1>
+              <p className="eyebrow">{t("explore.eyebrow")}</p>
+              <h1>{t("explore.heading")}</h1>
             </div>
           </div>
 
