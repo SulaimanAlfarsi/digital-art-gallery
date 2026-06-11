@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { CrowdCanvas } from "@/components/v1/skiper39";
+import { useI18n } from "@/lib/i18n-client";
 
 const ArtGalleryFooter = () => {
+  const { t } = useI18n();
+
   return (
     <footer className="gallery-footer">
       <div className="gallery-footer__canvas">
@@ -12,24 +17,22 @@ const ArtGalleryFooter = () => {
 
       <div className="gallery-footer__content">
         <div className="gallery-footer__intro">
-          <h2 className="gallery-footer__title">Riwaq Art</h2>
-          <p className="gallery-footer__subtitle">Explore Art Beyond Borders</p>
+          <h2 className="gallery-footer__title">{t("hero.title")}</h2>
+          <p className="gallery-footer__subtitle">{t("footer.subtitle")}</p>
           <p className="gallery-footer__description">
-            A living space where art, culture, and creativity meet. Wander
-            through curated collections, discover stories behind every piece, and
-            let imagination move freely between every frame.
+            {t("footer.description")}
           </p>
         </div>
 
         <div className="gallery-footer__bar">
           <nav aria-label="Footer navigation" className="gallery-footer__nav">
-            <Link href="/">Home</Link>
-            <Link href="/artworks">Artworks</Link>
-            <Link href="/explore">Explore</Link>
+            <Link href="/">{t("nav.home")}</Link>
+            <Link href="/artworks">{t("nav.artworks")}</Link>
+            <Link href="/explore">{t("nav.explore")}</Link>
           </nav>
 
           <p className="gallery-footer__copyright">
-            © 2026 Riwaq Art.
+            {t("footer.copyright")}
           </p>
         </div>
       </div>

@@ -4,17 +4,20 @@ import { useState } from "react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent, type Variants } from "framer-motion"
 import { Menu, X, Home, LayoutGrid, Compass } from "lucide-react"
 import Link from "next/link"
+import LanguageToggle from "@/components/LanguageToggle"
+import { useI18n } from "@/lib/i18n-client"
 
 const defaultMenuItems = [
-  { id: 1, title: "Home",     url: "/",         icon: Home },
-  { id: 2, title: "Artworks", url: "/artworks", icon: LayoutGrid },
-  { id: 3, title: "Explore",  url: "/explore",  icon: Compass },
+  { id: 1, titleKey: "nav.home",     url: "/",         icon: Home },
+  { id: 2, titleKey: "nav.artworks", url: "/artworks", icon: LayoutGrid },
+  { id: 3, titleKey: "nav.explore",  url: "/explore",  icon: Compass },
 ]
 
 export const ScrollNavbar = ({
   menuItems = defaultMenuItems,
   className = "",
 }) => {
+  const { t } = useI18n()
   const [isScrolled,  setIsScrolled]  = useState(false)
   const [isMenuOpen,  setIsMenuOpen]  = useState(false)
   const [hoveredItem, setHoveredItem] = useState<number | null>(null)
@@ -82,7 +85,7 @@ export const ScrollNavbar = ({
                     className="dag-navbar-link"
                   >
                     <item.icon className="dag-navbar-icon" strokeWidth={2.3} />
-                    <span>{item.title}</span>
+                    <span>{t(item.titleKey)}</span>
                   </Link>
 
                   <AnimatePresence>
@@ -102,10 +105,15 @@ export const ScrollNavbar = ({
               ))}
             </div>
 
+            <div className="dag-navbar-actions">
+              <LanguageToggle />
+            </div>
+
             <div className="dag-navbar-mobile">
               <motion.button
                 onClick={toggleMenu}
                 className="dag-navbar-menu-button"
+                aria-label={t("nav.openMenu")}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -119,7 +127,7 @@ export const ScrollNavbar = ({
       {/* ── Floating Action Button (visible when scrolled) ── */}
       <motion.button
         onClick={toggleMenu}
-        aria-label="Open navigation menu"
+        aria-label={t("nav.openMenu")}
         className="dag-floating-menu-button"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: isScrolled ? 1 : 0, opacity: isScrolled ? 1 : 0 }}
@@ -171,7 +179,7 @@ export const ScrollNavbar = ({
                 <div className="dag-menu-close-row">
                   <motion.button
                     onClick={closeMenu}
-                    aria-label="Close menu"
+                    aria-label={t("nav.closeMenu")}
                     className="dag-menu-close-button"
                     whileHover={{ rotate: 90 }}
                     whileTap={{ scale: 0.9 }}
@@ -198,10 +206,13 @@ export const ScrollNavbar = ({
                         <span className="dag-menu-link-icon-wrap">
                           <item.icon className="dag-menu-link-icon" strokeWidth={2.2} />
                         </span>
-                        <span className="dag-menu-link-label">{item.title}</span>
+                        <span className="dag-menu-link-label">{t(item.titleKey)}</span>
                       </Link>
                     </motion.div>
                   ))}
+                  <motion.div variants={itemVariants}>
+                    <LanguageToggle className="language-toggle--menu" />
+                  </motion.div>
                 </div>
               </div>
             </motion.div>

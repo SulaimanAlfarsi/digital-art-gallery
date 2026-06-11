@@ -17,8 +17,10 @@
   --border: rgba(23, 33, 43, 0.12);
   --bg: var(--bg-main);
   --fg: var(--text-main);
-  --font-barlow-condensed: Impact, "Arial Narrow", sans-serif;
-  --font-dm-sans: Arial, Helvetica, sans-serif;
+  --font-english: var(--font-ibm-plex-sans), Arial, Helvetica, sans-serif;
+  --font-arabic: var(--font-ibm-plex-sans-arabic), var(--font-ibm-plex-sans), Arial, sans-serif;
+  --font-barlow-condensed: var(--font-english);
+  --font-dm-sans: var(--font-english);
   --transition-stroke-1: var(--fg);
   --transition-stroke-2: var(--gold);
   --background: var(--bg-main);
@@ -177,6 +179,63 @@ body {
   font-family: var(--font-dm-sans);
 }
 
+html[lang="ar"] {
+  --font-barlow-condensed: var(--font-arabic);
+  --font-dm-sans: var(--font-arabic);
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .dag-hero-title,
+html[dir="rtl"] .section-header h1,
+html[dir="rtl"] .section-header h2,
+html[dir="rtl"] .gallery-footer__title,
+html[dir="rtl"] .folders-explore__header h1 {
+  text-transform: none;
+}
+
+html[lang="ar"] .dag-hero-tagline {
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+html[lang="ar"] .dag-hero-title {
+  width: min(100%, 12ch);
+  font-size: clamp(4rem, 9vw, 7.25rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+html[lang="ar"] .featured-works .section-header h2 {
+  font-family: var(--font-arabic);
+  font-weight: 600;
+  line-height: 1;
+}
+
+html[lang="ar"] .folders-explore__header h1 {
+  margin-top: 1rem;
+}
+
+html[lang="ar"] .dag-hero-description {
+  max-width: min(100%, 46rem);
+  margin-top: 2rem;
+  font-size: clamp(1.45rem, 2.75vw, 2.45rem);
+  font-weight: 600;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+html[lang="ar"] .dag-hero-cta {
+  margin-top: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -218,7 +277,7 @@ a {
   overflow: hidden;
   color: var(--fg);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -236,6 +295,12 @@ a {
 
 .dag-navbar-links {
   display: none;
+}
+
+.dag-navbar-actions {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .dag-navbar-link {
@@ -303,6 +368,48 @@ a {
 .dag-menu-close-button:hover,
 .dag-menu-link:hover {
   background: color-mix(in srgb, var(--gold), transparent 90%);
+}
+
+.language-toggle {
+  display: inline-flex;
+  min-width: 4.4rem;
+  height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg-card), transparent 8%);
+  color: var(--fg);
+  box-shadow: 0 10px 26px rgb(23 33 43 / 10%);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.language-toggle:hover {
+  border-color: color-mix(in srgb, var(--gold), transparent 42%);
+  background: color-mix(in srgb, var(--gold), transparent 90%);
+  color: var(--gold-light);
+  transform: translateY(-0.08rem);
+}
+
+.language-toggle__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.language-toggle--menu {
+  width: 100%;
+  height: 3.25rem;
+  justify-content: center;
+  border-radius: 12px;
 }
 
 .site-footer {
@@ -500,7 +607,7 @@ a {
 
 .dag-menu-link-label {
   font-size: 0.98rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .dag-hero {
@@ -536,7 +643,7 @@ a {
   padding: 0.45rem 0.9rem;
   color: var(--gold-light);
   font-size: 0.78rem;
-  font-weight: 850;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   box-shadow: 0 12px 34px rgb(23 33 43 / 8%);
@@ -548,7 +655,7 @@ a {
   color: var(--fg);
   font-family: var(--font-barlow-condensed);
   font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 0.82;
   text-wrap: balance;
   text-transform: uppercase;
@@ -560,7 +667,7 @@ a {
   color: var(--gold-light);
   font-family: var(--font-barlow-condensed);
   font-size: clamp(1.35rem, 3vw, 2.35rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   text-wrap: balance;
   text-transform: uppercase;
@@ -581,7 +688,7 @@ a {
   padding: 0.75rem 1.5rem;
   box-shadow: 0 14px 36px rgb(182 120 22 / 24%);
   font-size: 0.9rem;
-  font-weight: 850;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -599,14 +706,18 @@ a {
   width: 100%;
   height: 9.75rem;
   padding-top: 0.75rem;
+  direction: ltr;
   mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
 }
 
 .dag-hero-marquee-track {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   width: max-content;
+  direction: ltr;
   animation: dag-hero-marquee-scroll var(--marquee-duration, 42s) linear infinite;
+  unicode-bidi: isolate;
   will-change: transform;
 }
 
@@ -706,6 +817,10 @@ a {
     gap: 0.85rem;
   }
 
+  .dag-navbar-actions {
+    display: flex;
+  }
+
   .dag-navbar-mobile {
     display: none;
   }
@@ -794,7 +909,7 @@ a {
   text-transform: uppercase;
   font-family: var(--font-barlow-condensed);
   font-size: clamp(4.5rem, 14vw, 17rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
 }
@@ -912,7 +1027,7 @@ a {
   padding: 2rem;
   font-family: var(--font-barlow-condensed);
   font-size: 2.25rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -1122,7 +1237,7 @@ a {
   color: var(--primary-foreground);
   padding: 0.85rem 1.2rem;
   font: inherit;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 14px 36px rgb(182 120 22 / 24%);
@@ -1173,6 +1288,7 @@ a {
 
 .page-section {
   min-height: 100svh;
+  background: var(--bg);
   padding-top: clamp(6rem, 11vw, 8rem);
 }
 
@@ -1189,6 +1305,7 @@ a {
 .section-header h2 {
   font-family: var(--font-barlow-condensed);
   font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 700;
   line-height: 0.95;
   text-transform: uppercase;
 }
@@ -1238,6 +1355,7 @@ a {
   display: flex;
   width: min(100%, 76rem);
   margin: 0 auto clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--bg);
   gap: 0.55rem;
   overflow-x: auto;
   padding: 0.15rem 0.1rem 0.45rem;
@@ -1252,13 +1370,13 @@ a {
   flex: 0 0 auto;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--bg-card), transparent 8%);
+  background: var(--bg);
   color: var(--text-muted);
   padding: 0.62rem 0.9rem;
-  box-shadow: 0 10px 26px rgb(23 33 43 / 8%);
+  box-shadow: 0 6px 18px rgb(23 33 43 / 5%);
   font: inherit;
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0;
   cursor: pointer;
   white-space: nowrap;
@@ -1436,7 +1554,7 @@ a {
 .category-card p {
   color: var(--transition-stroke-2);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -1646,7 +1764,7 @@ a {
   color: var(--fg);
   font-family: var(--font-barlow-condensed);
   font-size: clamp(2.75rem, 6.2vw, 5rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 0.9;
   text-transform: uppercase;
 }
@@ -1681,7 +1799,7 @@ a {
   color: var(--fg);
   font-family: var(--font-dm-sans);
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.28;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1786,7 +1904,7 @@ a {
   color: var(--text-main);
   font-family: var(--font-barlow-condensed);
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 0.92;
   text-wrap: balance;
   text-transform: uppercase;
@@ -1796,7 +1914,7 @@ a {
   margin-top: 0.85rem;
   color: var(--gold-light);
   font-size: clamp(1rem, 2vw, 1.3rem);
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .gallery-footer__description {
@@ -1829,7 +1947,7 @@ a {
   gap: 1.5rem;
   color: var(--text-main);
   font-size: 0.95rem;
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .gallery-footer__nav a:hover {
@@ -1839,7 +1957,7 @@ a {
 .gallery-footer__copyright {
   color: color-mix(in srgb, var(--text-main), transparent 22%);
   font-size: 0.84rem;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 @media (min-width: 640px) {

@@ -3,11 +3,17 @@
 
 import { useEffect, useState } from "react";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import artworksArabic from "@/data/artworks-ar.json";
+import { useI18n } from "@/lib/i18n-client";
 
 const fallbackPalette = {
   primary: "var(--text-main)",
   secondary: "var(--terracotta)",
 };
+
+const artworksArabicById = new Map(
+  artworksArabic.map((artwork) => [artwork.id, artwork]),
+);
 
 function getColorScore(red, green, blue) {
   const max = Math.max(red, green, blue);
@@ -84,7 +90,10 @@ function getProxiedImageUrl(image) {
 }
 
 export default function ArtworkCard({ artwork }) {
+  const { language, tCategory } = useI18n();
   const [palette, setPalette] = useState(fallbackPalette);
+  const localizedArtwork =
+    language === "ar" ? artworksArabicById.get(artwork.id) ?? artwork : artwork;
 
   useEffect(() => {
     const image = new Image();
@@ -115,7 +124,7 @@ export default function ArtworkCard({ artwork }) {
       <div className="artwork-card-media">
         <img
           src={artwork.image}
-          alt={artwork.title}
+          alt={localizedArtwork.title}
         />
         <div aria-hidden="true" className="artwork-card-transition">
           <svg
@@ -148,9 +157,9 @@ export default function ArtworkCard({ artwork }) {
           blurIntensity={0.75}
         />
         <div className="artwork-card-overlay">
-          <p>{artwork.category}</p>
-          <h2>{artwork.title}</h2>
-          <span>{artwork.artist} - {artwork.year}</span>
+          <p>{tCategory(artwork.category)}</p>
+          <h2>{localizedArtwork.title}</h2>
+          <span>{localizedArtwork.artist} - {localizedArtwork.year}</span>
         </div>
       </div>
     </article>

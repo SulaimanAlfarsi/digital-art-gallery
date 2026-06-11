@@ -4,8 +4,10 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ArtworkCard from "@/components/ArtworkCard";
 import artworks from "@/data/artworks.json";
+import { useI18n } from "@/lib/i18n-client";
 
 export default function ArtworksPage() {
+  const { t, tCategory } = useI18n();
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = useMemo(
@@ -25,16 +27,13 @@ export default function ArtworksPage() {
     <section className="section page-section">
       <div className="section-header">
         <div>
-          <p className="eyebrow">Gallery</p>
-          <h1>Artworks</h1>
+          <p className="eyebrow">{t("artworks.eyebrow")}</p>
+          <h1>{t("artworks.heading")}</h1>
         </div>
-        <p>
-          Browse selected digital pieces across generative systems, immersive
-          environments, and visual experiments.
-        </p>
+        <p>{t("artworks.description")}</p>
       </div>
 
-      <div className="artwork-filter" aria-label="Filter artworks by category">
+      <div className="artwork-filter" aria-label={t("artworks.filterLabel")}>
         {categories.map((category) => (
           <button
             key={category}
@@ -45,7 +44,7 @@ export default function ArtworksPage() {
             aria-pressed={selectedCategory === category}
             onClick={() => setSelectedCategory(category)}
           >
-            {category}
+            {category === "All" ? t("artworks.all") : tCategory(category)}
           </button>
         ))}
       </div>
