@@ -72,6 +72,8 @@ const dictionary: Record<Language, TranslationTree> = {
     explore: {
       eyebrow: "Explore",
       heading: "Creative Project Folders",
+      description:
+        "Browse curated project folders across artistic movements, celebrated artists, and visual stories.",
       works: "works",
     },
     footer: {
@@ -133,6 +135,8 @@ const dictionary: Record<Language, TranslationTree> = {
     explore: {
       eyebrow: "استكشاف",
       heading: "مجلدات المشاريع الإبداعية",
+      description:
+        "تصفّح مجلدات مشاريع منتقاة عبر الحركات الفنية، والفنانين البارزين، والقصص البصرية.",
       works: "أعمال",
     },
     footer: {

@@ -8,7 +8,7 @@
   --bg-card: #ffffff;
   --text-main: #17212b;
   --text-muted: #657386;
-  --gold: #b67816;
+  --gold: #ad4930;
   --gold-light: #8f5c10;
   --terracotta: #c25f3d;
   --deep-red: #a83246;
@@ -173,6 +173,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   background: var(--bg);
   color: var(--fg);
@@ -182,6 +186,7 @@ body {
 html[lang="ar"] {
   --font-barlow-condensed: var(--font-arabic);
   --font-dm-sans: var(--font-arabic);
+  font-size: 14px;
 }
 
 html[dir="rtl"] body {
@@ -203,9 +208,17 @@ html[lang="ar"] .dag-hero-tagline {
   text-transform: none;
 }
 
+html[lang="ar"] .eyebrow {
+  padding-block: 0.15em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-transform: none;
+}
+
 html[lang="ar"] .dag-hero-title {
   width: min(100%, 12ch);
-  font-size: clamp(4rem, 9vw, 7.25rem);
+  font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 600;
   line-height: 1;
 }
@@ -223,7 +236,7 @@ html[lang="ar"] .folders-explore__header h1 {
 html[lang="ar"] .dag-hero-description {
   max-width: min(100%, 46rem);
   margin-top: 2rem;
-  font-size: clamp(1.45rem, 2.75vw, 2.45rem);
+  font-size: clamp(1.15rem, 2vw, 1.8rem);
   font-weight: 600;
   line-height: 1.35;
   text-transform: none;
@@ -654,7 +667,7 @@ a {
   width: min(100%, 10ch);
   color: var(--fg);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-size: clamp(3.25rem, 7vw, 6rem);
   font-weight: 700;
   line-height: 0.82;
   text-wrap: balance;
@@ -666,7 +679,7 @@ a {
   margin-top: 1rem;
   color: var(--gold-light);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(1.35rem, 3vw, 2.35rem);
+  font-size: clamp(1.1rem, 2vw, 1.75rem);
   font-weight: 700;
   line-height: 1;
   text-wrap: balance;
@@ -908,7 +921,7 @@ a {
 .hero h1 {
   text-transform: uppercase;
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(4.5rem, 14vw, 17rem);
+  font-size: clamp(3.5rem, 10vw, 11rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
@@ -1213,7 +1226,7 @@ a {
 
 .image-carousel-hero__content h1 {
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(4rem, 12vw, 13rem);
+  font-size: clamp(3.25rem, 9vw, 8rem);
   line-height: 0.88;
   text-transform: uppercase;
 }
@@ -1304,7 +1317,7 @@ a {
 .section-header h1,
 .section-header h2 {
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
   font-weight: 700;
   line-height: 0.95;
   text-transform: uppercase;
@@ -1658,11 +1671,13 @@ a {
 }
 
 @media (max-width: 800px) {
-  .section-header {
+  .section-header,
+  .folders-explore__header {
     display: block;
   }
 
-  .section-header > p {
+  .section-header > p,
+  .folders-explore__header > p {
     margin-top: 1rem;
   }
 
@@ -1751,29 +1766,40 @@ a {
 }
 
 .folders-explore__inner {
-  width: min(100%, 80rem);
+  width: min(100%, 90rem);
   margin: 0 auto;
 }
 
 .folders-explore__header {
-  margin-bottom: 2.75rem;
+  display: flex;
+  max-width: 76rem;
+  margin: 0 auto clamp(4rem, 7vw, 6rem);
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .folders-explore__header h1 {
-  margin-top: 0.25rem;
   color: var(--fg);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(2.75rem, 6.2vw, 5rem);
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 0.95;
   text-transform: uppercase;
+}
+
+.folders-explore__header > p {
+  max-width: 32rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .folders-explore__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 288px);
   justify-content: center;
-  gap: 2rem 2.25rem;
+  gap: 4rem 3.5rem;
 }
 
 .folders-explore .project-folder-card {
@@ -1903,7 +1929,7 @@ a {
 .gallery-footer__title {
   color: var(--text-main);
   font-family: var(--font-barlow-condensed);
-  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
   font-weight: 700;
   line-height: 0.92;
   text-wrap: balance;

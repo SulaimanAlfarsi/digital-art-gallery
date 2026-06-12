@@ -178,6 +178,7 @@ function FoldersExploreContent() {
               <p className="eyebrow">{t("explore.eyebrow")}</p>
               <h1>{t("explore.heading")}</h1>
             </div>
+            <p>{t("explore.description")}</p>
           </div>
 
           <div className="folders-explore__grid">
