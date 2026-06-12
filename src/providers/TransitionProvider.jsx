@@ -10,6 +10,9 @@ export default function TransitionProvider({ children }) {
   const pathsRef = useRef([]);
   const pathLengthsRef = useRef([]);
 
+  const getCoverStrokeWidth = () =>
+    window.matchMedia("(max-aspect-ratio: 3 / 4)").matches ? 2600 : 1400;
+
   useEffect(() => {
     if (!svgRef.current || !overlayRef.current) return;
 
@@ -42,7 +45,7 @@ export default function TransitionProvider({ children }) {
             path,
             {
               strokeDashoffset: 0,
-              attr: { "stroke-width": 1400 },
+              attr: { "stroke-width": getCoverStrokeWidth() },
               duration: 1,
               ease: "power1.inOut",
             },
