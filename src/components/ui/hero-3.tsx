@@ -3,6 +3,7 @@
 
 import React from "react";
 import { motion, type Variants } from "framer-motion";
+import { Link as TransitionLink } from "next-transition-router";
 import { cn } from "@/lib/utils";
 
 interface AnimatedMarqueeHeroProps {
@@ -16,14 +17,14 @@ interface AnimatedMarqueeHeroProps {
 }
 
 const ActionButton = ({ children, href }: { children: React.ReactNode; href?: string }) => (
-  <motion.a
-    href={href}
+  <motion.div
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="dag-hero-cta"
   >
-    {children}
-  </motion.a>
+    <TransitionLink href={href ?? "/artworks"} className="dag-hero-cta">
+      {children}
+    </TransitionLink>
+  </motion.div>
 );
 
 export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({

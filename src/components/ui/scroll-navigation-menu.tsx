@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent, type Variants } from "framer-motion"
 import { Menu, X, Home, LayoutGrid, Compass } from "lucide-react"
 import { Link as TransitionLink } from "next-transition-router"
+import { usePathname } from "next/navigation"
 import LanguageToggle from "@/components/LanguageToggle"
 import { useI18n } from "@/lib/i18n-client"
 
@@ -19,14 +20,16 @@ export const ScrollNavbar = ({
 }) => {
   const { t } = useI18n()
   const [isScrolled,  setIsScrolled]  = useState(false)
-  const [isMenuOpen,  setIsMenuOpen]  = useState(false)
+  const [menuOpenPath, setMenuOpenPath] = useState<string | null>(null)
   const [hoveredItem, setHoveredItem] = useState<number | null>(null)
+  const pathname = usePathname()
+  const isMenuOpen = menuOpenPath === pathname
 
   const { scrollY } = useScroll()
   useMotionValueEvent(scrollY, "change", (latest) => setIsScrolled(latest > 100))
 
-  const toggleMenu = () => setIsMenuOpen((v) => !v)
-  const closeMenu  = () => setIsMenuOpen(false)
+  const toggleMenu = () => setMenuOpenPath((path) => path === pathname ? null : pathname)
+  const closeMenu  = () => setMenuOpenPath(null)
 
   const menuVariants: Variants = {
     closed: {
@@ -200,7 +203,6 @@ export const ScrollNavbar = ({
                     >
                       <TransitionLink
                         href={item.url}
-                        onClick={closeMenu}
                         className="dag-menu-link"
                       >
                         <span className="dag-menu-link-icon-wrap">

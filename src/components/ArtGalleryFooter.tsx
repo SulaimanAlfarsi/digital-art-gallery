@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link as TransitionLink } from "next-transition-router";
 import { CrowdCanvas } from "@/components/v1/skiper39";
 import { useI18n } from "@/lib/i18n-client";
 
@@ -26,9 +26,9 @@ const ArtGalleryFooter = () => {
 
         <div className="gallery-footer__bar">
           <nav aria-label="Footer navigation" className="gallery-footer__nav">
-            <Link href="/">{t("nav.home")}</Link>
-            <Link href="/artworks">{t("nav.artworks")}</Link>
-            <Link href="/explore">{t("nav.explore")}</Link>
+            <TransitionLink href="/">{t("nav.home")}</TransitionLink>
+            <TransitionLink href="/artworks">{t("nav.artworks")}</TransitionLink>
+            <TransitionLink href="/explore">{t("nav.explore")}</TransitionLink>
           </nav>
 
           <p className="gallery-footer__copyright">

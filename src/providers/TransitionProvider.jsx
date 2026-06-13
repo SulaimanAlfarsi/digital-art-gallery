@@ -36,7 +36,6 @@ export default function TransitionProvider({ children }) {
 
   return (
     <TransitionRouter
-      auto
       leave={(next) => {
         const tl = gsap.timeline({ onComplete: next });
 

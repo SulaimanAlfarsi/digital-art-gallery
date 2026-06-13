@@ -1659,7 +1659,7 @@ a {
 
 .transition-fill {
   position: absolute;
-  inset: 0;
+  inset: -2px;
   z-index: 0;
   background:
     linear-gradient(
@@ -1679,6 +1679,27 @@ a {
   height: 125dvh;
   z-index: 1;
   fill: none;
+}
+
+@media (max-width: 800px) {
+  .transition-svg {
+    inset: -12vmax;
+    width: auto;
+    height: auto;
+    min-width: calc(100vw + 24vmax);
+    min-height: calc(100dvh + 24vmax);
+  }
+
+  .transition-fill {
+    inset: -4vmax;
+  }
+
+  .transition-svg svg {
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+  }
 }
 
 .transition-svg.page-transition--leaving {
