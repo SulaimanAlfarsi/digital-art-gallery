@@ -10,8 +10,13 @@ export default function TransitionProvider({ children }) {
   const pathsRef = useRef([]);
   const pathLengthsRef = useRef([]);
 
-  const getCoverStrokeWidth = () =>
-    window.matchMedia("(max-aspect-ratio: 3 / 4)").matches ? 2600 : 1400;
+  const isPortrait = () =>
+    window.matchMedia("(max-aspect-ratio: 3 / 4)").matches;
+
+  const getCoverStrokeWidth = () => (isPortrait() ? 3400 : 1900);
+
+  // Slower on narrow/portrait (phone) viewports, snappier on wide screens.
+  const getCoverDuration = () => (isPortrait() ? 1.6 : 1.1);
 
   useEffect(() => {
     if (!svgRef.current || !overlayRef.current) return;
@@ -45,7 +50,7 @@ export default function TransitionProvider({ children }) {
             {
               strokeDashoffset: 0,
               attr: { "stroke-width": getCoverStrokeWidth() },
-              duration: 1,
+              duration: getCoverDuration(),
               ease: "power1.inOut",
             },
             0,
@@ -68,7 +73,7 @@ export default function TransitionProvider({ children }) {
             {
               strokeDashoffset: pathLengthsRef.current[index],
               attr: { "stroke-width": 200 },
-              duration: 1,
+              duration: getCoverDuration(),
               ease: "power1.inOut",
             },
             0,
