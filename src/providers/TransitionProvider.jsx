@@ -6,7 +6,6 @@ import { TransitionRouter } from "next-transition-router";
 
 export default function TransitionProvider({ children }) {
   const overlayRef = useRef(null);
-  const fillRef = useRef(null);
   const svgRef = useRef(null);
   const pathsRef = useRef([]);
   const pathLengthsRef = useRef([]);
@@ -15,7 +14,7 @@ export default function TransitionProvider({ children }) {
     window.matchMedia("(max-aspect-ratio: 3 / 4)").matches ? 2600 : 1400;
 
   useEffect(() => {
-    if (!svgRef.current || !overlayRef.current || !fillRef.current) return;
+    if (!svgRef.current || !overlayRef.current) return;
 
     pathsRef.current = Array.from(svgRef.current.querySelectorAll("path"));
 
@@ -31,7 +30,6 @@ export default function TransitionProvider({ children }) {
     });
 
     gsap.set(overlayRef.current, { autoAlpha: 0 });
-    gsap.set(fillRef.current, { opacity: 0 });
   }, []);
 
   return (
@@ -53,16 +51,6 @@ export default function TransitionProvider({ children }) {
             0,
           );
         });
-
-        tl.to(
-          fillRef.current,
-          {
-            opacity: 1,
-            duration: 0.3,
-            ease: "power1.inOut",
-          },
-          0.7,
-        );
 
         return () => tl.kill();
       }}
@@ -87,16 +75,6 @@ export default function TransitionProvider({ children }) {
           );
         });
 
-        tl.to(
-          fillRef.current,
-          {
-            opacity: 0,
-            duration: 0.65,
-            ease: "power1.inOut",
-          },
-          0.15,
-        );
-
         return () => tl.kill();
       }}
     >
@@ -107,7 +85,6 @@ export default function TransitionProvider({ children }) {
         className="transition-svg"
         style={{ opacity: 0, visibility: "hidden" }}
       >
-        <div ref={fillRef} className="transition-fill" />
         <svg
           ref={svgRef}
           viewBox="0 0 2450 2535"
