@@ -6,6 +6,17 @@ import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import artworksArabic from "@/data/artworks-ar.json";
 import { useI18n } from "@/lib/i18n-client";
 
+const categoryColors = {
+  Renaissance: "#c89546",
+  "Post-Impressionism": "#e0a21a",
+  Baroque: "#b66a3c",
+  "Ukiyo-e": "#d66b43",
+  "Northern Renaissance": "#a8793e",
+  Surrealism: "#d36c83",
+  Impressionism: "#d99a78",
+  Romanticism: "#c77b50",
+};
+
 const fallbackPalette = {
   primary: "var(--text-main)",
   secondary: "var(--terracotta)",
@@ -92,6 +103,7 @@ function getProxiedImageUrl(image) {
 export default function ArtworkCard({ artwork }) {
   const { language } = useI18n();
   const [palette, setPalette] = useState(fallbackPalette);
+  const categoryColor = categoryColors[artwork.category] ?? "var(--terracotta)";
   const localizedArtwork =
     language === "ar" ? artworksArabicById.get(artwork.id) ?? artwork : artwork;
 
@@ -118,6 +130,7 @@ export default function ArtworkCard({ artwork }) {
       style={{
         "--card-stroke-1": palette.primary,
         "--card-stroke-2": palette.secondary,
+        "--card-category-color": categoryColor,
       }}
       tabIndex={0}
     >
