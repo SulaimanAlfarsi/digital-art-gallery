@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent, type Variants } from "framer-motion"
 import { Menu, X, Home, LayoutGrid, Compass } from "lucide-react"
-import Link from "next/link"
+import { Link as TransitionLink } from "next-transition-router"
 import LanguageToggle from "@/components/LanguageToggle"
 import { useI18n } from "@/lib/i18n-client"
 
@@ -66,9 +66,9 @@ export const ScrollNavbar = ({
           <div className="dag-navbar-row">
 
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-              <Link href="/" className="dag-navbar-brand">
+              <TransitionLink href="/" className="dag-navbar-brand">
                 <span className="dag-navbar-logo" aria-hidden="true" />
-              </Link>
+              </TransitionLink>
             </motion.div>
 
             <div className="dag-navbar-links">
@@ -80,13 +80,13 @@ export const ScrollNavbar = ({
                   onMouseLeave={() => setHoveredItem(null)}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link
+                  <TransitionLink
                     href={item.url}
                     className="dag-navbar-link"
                   >
                     <item.icon className="dag-navbar-icon" strokeWidth={2.3} />
                     <span>{t(item.titleKey)}</span>
-                  </Link>
+                  </TransitionLink>
 
                   <AnimatePresence>
                     {hoveredItem === item.id && (
@@ -198,7 +198,7 @@ export const ScrollNavbar = ({
                       whileHover={{ x: 6 }}
                       whileTap={{ scale: 0.97 }}
                     >
-                      <Link
+                      <TransitionLink
                         href={item.url}
                         onClick={closeMenu}
                         className="dag-menu-link"
@@ -207,7 +207,7 @@ export const ScrollNavbar = ({
                           <item.icon className="dag-menu-link-icon" strokeWidth={2.2} />
                         </span>
                         <span className="dag-menu-link-label">{t(item.titleKey)}</span>
-                      </Link>
+                      </TransitionLink>
                     </motion.div>
                   ))}
                   <motion.div variants={itemVariants}>
