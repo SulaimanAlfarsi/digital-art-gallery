@@ -1657,6 +1657,19 @@ a {
   height: 100dvh;
 }
 
+.transition-fill {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(
+      135deg,
+      var(--transition-stroke-1) 0 52%,
+      var(--transition-stroke-2) 52% 100%
+    );
+  opacity: 0;
+}
+
 .transition-svg svg {
   position: absolute;
   top: -12.5dvh;
@@ -1664,6 +1677,7 @@ a {
   width: 125vw;
   height: 125vh;
   height: 125dvh;
+  z-index: 1;
   fill: none;
 }
 
