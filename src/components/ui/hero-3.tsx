@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
 import { motion, type Variants } from "framer-motion";
 import { Link as TransitionLink } from "next-transition-router";
 import { cn } from "@/lib/utils";
+import { ImageStreamHero } from "@/components/ui/image-stream-hero";
 
 interface AnimatedMarqueeHeroProps {
   tagline: string;
@@ -41,15 +41,29 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 20 } },
   };
 
-  const duplicatedImages = [...images, ...images];
+  // Start with the given order for a stable SSR render, then shuffle the full
+  // image set on the client so each visit draws a random spread of artworks.
+  const [streamImages, setStreamImages] = React.useState(() =>
+    images.map((src) => ({ src })),
+  );
+
+  React.useEffect(() => {
+    const shuffled = [...images];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    setStreamImages(shuffled.map((src) => ({ src })));
+  }, [images]);
 
   return (
-    <section
-      className={cn(
-        "dag-hero",
-        className
-      )}
+    <ImageStreamHero
+      images={streamImages}
+      className={cn("dag-hero", className)}
     >
+      {/* Light scrim over the corridor so the content stays legible. */}
+      <div aria-hidden className="dag-hero-scrim" />
+
       <div className="dag-hero-content">
         <motion.div
           initial="hidden"
@@ -88,31 +102,6 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
           <ActionButton href={ctaHref}>{ctaText}</ActionButton>
         </motion.div>
       </div>
-
-      <div className="dag-hero-marquee">
-        <motion.div
-          className="dag-hero-marquee-track"
-          style={{
-            "--marquee-duration": `${Math.max(42, images.length * 4.5)}s`,
-          } as React.CSSProperties}
-        >
-          {duplicatedImages.map((src, index) => (
-            <div
-              key={index}
-              className="dag-hero-marquee-card"
-              style={{
-                rotate: `${(index % 2 === 0 ? -2 : 5)}deg`,
-              }}
-            >
-              <img
-                src={src}
-                alt={`Showcase image ${index + 1}`}
-                className="dag-hero-marquee-image"
-              />
-            </div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
+    </ImageStreamHero>
   );
 };
